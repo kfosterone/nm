@@ -1,0 +1,25 @@
+@import url("//hello.myfonts.net/count/3243c0");
+@font - face { font - family: 'CenturyGothic';
+    font - weight: bold;
+    src: url("webfonts/3243C0_0_0.eot");
+    src: url("webfonts/3243C0_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3243C0_0_0.woff2") format("woff2"), url("webfonts/3243C0_0_0.woff") format("woff"), url("webfonts/3243C0_0_0.ttf") format("truetype") } @font - face { font - family: 'CenturyGothic';
+    font - weight: normal;
+    src: url("webfonts/3243C0_1_0.eot");
+    src: url("webfonts/3243C0_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/3243C0_1_0.woff2") format("woff2"), url("webfonts/3243C0_1_0.woff") format("woff"), url("webfonts/3243C0_1_0.ttf") format("truetype") }*{ margin: 0;padding: 0 } body { background: #fcfcfc;color: #000;font-family:'CenturyGothic';font-size:11px;line-height:16px;letter-spacing:.3px;text-transform:uppercase;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch}.fake{font-weight:bold;visibility:hidden}.container{position:absolute;width:100%;height:100%;top:0;left:0}.container2{position:absolute;width:100%;top:0px;left:0px;overflow-x:hidden;opacity:1;transition:opacity .5s}.container-blocker{position:fixed;width:100%;height:100%;top:0px;left:0px;opacity:0;background:# fcfcfc;transition: opacity .5 s;pointer - events: none }.container canvas { position: absolute;top: 0 px;left: 0 px;right: 0 px;bottom: 0 px }.menu, .menu2, .menu3, .menu4 { position: absolute;opacity: 0;bottom: 30 px;transition: opacity .5 s;line - height: 18 px }.menu { left: 155 px }.menu2 { left: 363 px }.menu3 { left: 677 px }.menu4 { left: 886 px }.menu - item { cursor: pointer;position: relative; - webkit - user - select: none; - moz - user - select: none; - ms - user - select: none;user - select: none }.menu - item.content { position: relative;display: inline - block }.menu - item.line { position: absolute;top: 7 px;left: -2 px;background: #000;width:0px;height:1px;transition:width .3s ease-out}.menu-item .menu-icon{position:relative;display:inline-block;margin-left:4px;display:none}.caption{position:absolute;bottom:30px;left:390px;opacity:0;transition:opacity .4s;max-width:260px}.x{position:absolute;left:50%;top:28px;transition:opacity .3s;opacity:0;-ms-transform:translate(-50%, 0);transform:translate(-50%, 0)}.x img{width:40px;height:40px}.loading,.title{position:absolute;top:50%;left:50%;-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);text-transform:uppercase}.title{margin-top:-30px;font-size:33px;line-height:37px;letter-spacing:-.1px;text-align:center;max-width:360px}.title .text{position:relative;display:inline-block;text-transform:none}.loading .line{position:absolute;background:# 000;top: 6 px;left: -2 px;width: 0 px;height: 1 px }.store - icon { width: 48 px;height: 12 px;top: 0;left: 0;background - image: url(.. / img / store_hover.svg);position: absolute;display: none;pointer - events: none }.tour - icon { width: 110 px;height: 12 px;background - image: url(.. / img / tour_dates.svg);position: absolute;top: 0;left: 0;display: none;pointer - events: none }.signup { position: absolute;top: 30 px;left: 50 % ; - ms - transform: translate(-50 % , 0);transform: translate(-50 % , 0);width: 360 px }.cs - container { position: absolute;left: 320 px;right: 20 px;min - width: 240 px;margin - top: 60 px }.css - element { position: absolute;transition: opacity .3 s;cursor: pointer }.fallback - img { position: absolute }.fallback - text { position: absolute;font - weight: bold;font - size: 32 px;line - height: 32 px;letter - spacing: .3;text - align: center }.fallback - caption { position: absolute;max - width: 260 px }.signup - wrap { position: absolute;top: 120 px;left: 50 % ; - ms - transform: translate(-50 % , 0);transform: translate(-50 % , 0) }.entry { margin - bottom: 4 px;
+    width: 320 px;
+    height: 40 px;
+    border: none;
+    border - bottom: 1 px solid# ccc } @media only screen and(max - width: 970 px) {.menu, .menu2, .menu3, .menu4 { line - height: 25 px;
+        bottom: 26 px }.menu { left: 26 px }.menu2, .menu3, .menu4 { left: 160 px }.caption { left: 180 px;max - width: 208 px }.title { font - size: 29 px;
+        line - height: 30 px;
+        letter - spacing: -.15 px;
+        text - align: center;
+        max - width: 250 px;
+        margin - top: -26 px }.menu - item.line { top: 11 px }.x img { top: 20 px;width: 30 px;height: 30 px }.signup { width: 270 px;position: absolute;top: 30 px;right: 10 px;left: auto; - ms - transform: translate(0, 0);transform: translate(0, 0) }.cs - container { left: 135 px;margin - top: 40 px } } @media only screen and(max - width: 320 px) {.signup - wrap {-ms - transform: translate(0, 0);
+        transform: translate(0, 0);
+        left: 120 px;
+        right: 20 px }.entry { margin - bottom: 4 px;
+        width: 100 % ;
+        height: 40 px;
+        border: none;
+        border - bottom: 1 px solid# ccc }.cs - container { left: 90 px;margin - top: 40 px } }
