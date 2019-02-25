@@ -6,15 +6,10 @@ Kitchen
 - * Load/ Unload Dishwasher
 
 
-
 Bedroom
-- 
-- 
-- 
--
--
-
-
+- Sheets changed (Clean sheets must be left out)
+- Beds Made
+- *Clothing organized (if requested)
 
 
 Bathroom
@@ -23,7 +18,6 @@ Bathroom
 - 
 -
 -
-
 
 
 All Areas
@@ -39,6 +33,7 @@ All Areas
 - * All surfaces dusted
 - * Baseboards wiped
 - * Upholstered furniture vacuumed
+- * Window sills cleaned
 
 
 We Do Not
