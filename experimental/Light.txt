@@ -1,4 +1,5 @@
 Light:
+
 Kitchen
 - Sinks and backsplashes washed
 - Appliance exteriors cleaned (stove top, oven, fridge, microwave, dishwasher, toaster)
@@ -13,14 +14,16 @@ Bedroom
 
 
 Bathroom
-- 
-- 
-- 
--
--
+- Sinks cleaned and sanitized
+- Toilet cleaned and sanitized, inside and out
+- Mirrors Cleaned
+- Towels changed (if clean ones left out)
+- **Bathtubs, shower walls and glass doors cleaned and sanitized
+
 
 
 All Areas
+- All surfaces dusted and wiped
 - Cabinet Fronts Wiped
 - Tables and Counter tops cleaned
 - Carpet and area rugs vacuumed 
@@ -30,7 +33,6 @@ All Areas
 - Mirrors Cleaned
 - Trash bins emptied
 - * Light switches and door knobs wiped
-- * All surfaces dusted
 - * Baseboards wiped
 - * Upholstered furniture vacuumed
 - * Window sills cleaned
