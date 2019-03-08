@@ -56,32 +56,39 @@ width: auto;
 
 
 </style>
-	<script>
-function serviceTabSelected(id) {
-	
-  
-
+<script>
+function serviceTabSelected(evt, serviceName) {
+  var i, content, tablinks;
+  content = document.getElementsByClassName("content");
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(serviceName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
-
 </script>
+
 </head>
-<body>
-	<div id ='services' class='tabs-app'>
-		<div id ='services-tabs'>
-			<button id ='light' onclick="serviceTabSelected()"> Light </button>
-			<button id = 'standard' onclick="serviceTabSelected()"> Standard </button>
-			<button id ='deep' onclick="serviceTabSelected()"> Deep </button>
-			<button id ='justfloors' onclick="serviceTabSelected()"> Just Floors </button>
+<body onload ="serviceTabSelected(event, 'standardContent')">
+	<div class="tabs-app">
+		<div class ="tab">
+			<button class ="tablinks" onclick="serviceTabSelected(event, 'lightContent')"> Light </button>
+			<button class ="tablinks" onclick="serviceTabSelected(event, 'standardContent')"> Standard </button>
+			<button class ="tablinks" onclick="serviceTabSelected(event, 'deepContent')"> Deep </button>
+			<button class ="tablinks" id ='justfloors' onclick="serviceTabSelected(event, 'floorsContent')"> Just Floors </button>
 		</div>
 
-<div id='displayed-content'></div>
 
 
 
-<div id='standardContent' class='content' hidden="yes">
+<div id="lightContent" class="content" hidden="yes">
 			<ul>
 				<h1>All Rooms</h1>
-				<li>Standard Item</li>
+				<li>Light Light</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
@@ -89,9 +96,7 @@ function serviceTabSelected(id) {
 				<li>Light Item</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
-				<li>Light Item</li>
-				<li>Light Item</li>
-				<li>Light Item</li>
+			
 			</ul>
 
 			<ul>
@@ -138,9 +143,185 @@ function serviceTabSelected(id) {
 				<li>Light Item</li>
 				<li>Light Item</li>
 			</ul>
+		</div>
 
-		
+<div id="standardContent" class="content" hidden="yes">
+			<ul>
+				<h1>All Rooms</h1>
+				<li>Standard Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Standard</li>
+			
+			</ul>
 
+			<ul>
+				<h1>Kitchen</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul>
+				<h1>Bathrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul>
+				<h1>Bedrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+		</div>
+
+		<div id="deepContent" class="content" hidden="yes">
+			<ul>
+				<h1>All Rooms</h1>
+				<li>Standard Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Deep</li>
+			
+			</ul>
+
+			<ul>
+				<h1>Kitchen</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul>
+				<h1>Bathrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul>
+				<h1>Bedrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Deep</li>
+			</ul>
+		</div>
+
+		<div id="floorsContent" class="content" hidden="yes">
+			<ul>
+				<h1>All Rooms</h1>
+				<li>Standard Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Floors</li>
+			</ul>
+
+			<ul>
+				<h1>Kitchen</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul>
+				<h1>Bathrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul>
+				<h1>Bedrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
 		</div>
 
 	</div>
