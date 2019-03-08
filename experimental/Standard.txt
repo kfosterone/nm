@@ -1,10 +1,10 @@
-Light:
+Standard.txt
 
 Kitchen
 - Sinks and backsplashes washed
 - Appliance exteriors cleaned (stove top, oven, fridge, microwave, dishwasher, toaster)
-- * Inside Microwave Cleaned
-- * Load/ Unload Dishwasher
+- Load/ Unload Dishwasher
+- *Inside Microwave Cleaned
 
 
 Bedroom
@@ -27,17 +27,15 @@ All Areas
 - Cabinet Fronts Wiped
 - Tables and Counter tops cleaned
 - Carpet and area rugs vacuumed 
-- Hard floors swept and vacuumed
+- Hard floors vacuumed and mopped
 - Cushions and pillows fluffed
 - Light organizing
 - Mirrors Cleaned
 - Trash bins emptied
-- * Light switches and door knobs wiped
+- Light switches and door knobs wiped
 - * Baseboards wiped
-- * Hard floors mopped
-- ** Ceiling fan blades wiped
-- ** Upholstered furniture vacuumed
-- ** Window sills cleaned
+- * Upholstered furniture vacuumed
+- * Window sills cleaned
 
 
 We Do Not
@@ -45,7 +43,7 @@ We Do Not
 - Clean chandeliers
 - Hand wash Dishes
 - Wash walls
-- Clean exterior spaces and windows (Except for patio sweeping)
+- Clean exterior spaces and windows
 - Remove paint or construction products
 - Clean animal waster/ litter
 
