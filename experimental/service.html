@@ -12,13 +12,45 @@
 display:inline;
 list-style: none;
 padding-top: 20px;
-align: left;
- 
+padding-left: 0;
+padding-right: 30px;
+float: left;
+margin-right: ;
+align-content: left;
+width: auto;
 }
 
 .content li{
 	padding-top: 0 auto;
+	font-size: 20px;
+	width: auto;
 	}
+
+.content h1{
+	font-size: 20px;
+	/*width: auto;*/
+}
+
+#dontDo {
+	color: red;
+}
+
+.tabs-app {
+	padding-left: 0;
+	margin-left: 20px;
+	margin-top: 30px;
+	width: auto;
+}
+
+.tabs-app button{
+	border: none;
+	border-image: none;
+	box-shadow: none;
+	background-color: #fff;
+	font-size: 24px;
+	margin-right: 20px;
+}
+
 
 
 
@@ -45,11 +77,11 @@ function serviceTabSelected(id) {
 			<button id ='justfloors' onclick="serviceTabSelected()"> Just Floors </button>
 		</div>
 
-<div>
 
 
 <div id='standardContent' class='content'>
 			<ul>
+				<h1>All Rooms</h1>
 				<li>Standard Item</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
@@ -62,8 +94,9 @@ function serviceTabSelected(id) {
 				<li>Light Item</li>
 				<li>Light Item</li>
 			</ul>
-			<br>
+
 			<ul>
+				<h1>Kitchen</h1>
 				<li>Light Item</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
@@ -76,8 +109,9 @@ function serviceTabSelected(id) {
 				<li>Light Item</li>
 				<li>Light Item</li>
 			</ul>
-			<br>
+
 			<ul>
+				<h1>Bathrooms</h1>
 				<li>Light Item</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
@@ -90,8 +124,24 @@ function serviceTabSelected(id) {
 				<li>Light Item</li>
 				<li>Light Item</li>
 			</ul>
-			<br>
+
 			<ul>
+				<h1>Bedrooms</h1>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+				<li>Light Item</li>
+			</ul>
+
+			<ul id="dontDo">
+				<h1>What we dont do</h1>
 				<li>Light Item</li>
 				<li>Light Item</li>
 				<li>Light Item</li>
