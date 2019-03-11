@@ -1,6 +1,6 @@
 <html>
 <head>
-	<style>
+	<!--style>
 
 
 .content{
@@ -55,7 +55,7 @@ width: auto;
 
 
 
-</style>
+</style-->
 <script>
 function serviceTabSelected(evt, serviceName) {
   var i, content, tablinks;
@@ -71,6 +71,10 @@ function serviceTabSelected(evt, serviceName) {
   evt.currentTarget.className += " active";
 }
 </script>
+
+<!-- inject:css -->
+    <link rel="stylesheet" href="resources/css/main.css">
+    <!-- endinject -->
 
 </head>
 <body onload ="serviceTabSelected(event, 'standardContent')">
