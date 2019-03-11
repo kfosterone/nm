@@ -7,13 +7,13 @@ Kitchen
 - * Load/ Unload Dishwasher
 
 
-Bedroom
+Bedrooms
 - Sheets changed (Clean sheets must be left out)
 - Beds Made
 - *Clothing organized (if requested)
 
 
-Bathroom
+Bathrooms
 - Sinks cleaned and sanitized
 - Toilet cleaned and sanitized, inside and out
 - Mirrors Cleaned
