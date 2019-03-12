@@ -41,10 +41,10 @@
     <!-- inject:js -->
     <script>
     function serviceTabSelected(evt, serviceName) {
-        var i, content, tablinks;
-        content = document.getElementsByClassName("content");
-        for (i = 0; i < content.length; i++) {
-            content[i].style.display = "none";
+        var i, servicecontent, tablinks;
+        servicecontent = document.getElementsByClassName("servicecontent");
+        for (i = 0; i < servicecontent.length; i++) {
+            servicecontent[i].style.display = "none";
         }
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
@@ -56,8 +56,8 @@
     </script>
     <!-- endinject -->
 </head>
-
-<body onload="serviceTabSelected(event, 'standardContent')">
+<body>
+<!--body onload="serviceTabSelected(event, 'standardContent')"-->
     <header class="header clear">
         <div class="content">
             <div class="logo-wrapper">
@@ -96,12 +96,12 @@
             <div class="tabs-app">
                 <div class="tab">
                     <button class="tablinks" onclick="serviceTabSelected(event, 'lightContent')"> Light </button>
-                    <button class="tablinks" onclick="serviceTabSelected(event, 'standardContent')"> Standard </button>
+                    <button id='standardButton' class="tablinks active" onclick="serviceTabSelected(event, 'standardContent')"> Standard </button>
                     <button class="tablinks" onclick="serviceTabSelected(event, 'deepContent')"> Deep </button>
                     <button class="tablinks" id='justfloors' onclick="serviceTabSelected(event, 'floorsContent')"> Just Floors </button>
-                </div>
-                <div id="lightContent" class="content" hidden="yes">
-                    <ul>
+                </div>\   
+                <div id="lightContent" class="servicecontent" hidden="yes">
+                    <ul class ="services-ul">
                         <h1>All Rooms</h1>
                         <li>Light Light</li>
                         <li>Light Item</li>
@@ -112,7 +112,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -126,7 +126,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -140,7 +140,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -155,8 +155,8 @@
                         <li>Light Item</li>
                     </ul>
                 </div>
-                <div id="standardContent" class="content" hidden="yes">
-                    <ul>
+                <div id="standardContent" class="servicecontent">
+                    <ul class ="services-ul">
                         <h1>All Rooms</h1>
                         <li>Standard Item</li>
                         <li>Light Item</li>
@@ -167,7 +167,7 @@
                         <li>Light Item</li>
                         <li>Standard</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -181,7 +181,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -195,7 +195,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -210,8 +210,8 @@
                         <li>Light Item</li>
                     </ul>
                 </div>
-                <div id="deepContent" class="content" hidden="yes">
-                    <ul>
+                <div id="deepContent" class="servicecontent" hidden="yes">
+                    <ul class ="services-ul">
                         <h1>All Rooms</h1>
                         <li>Standard Item</li>
                         <li>Light Item</li>
@@ -222,7 +222,7 @@
                         <li>Light Item</li>
                         <li>Deep</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -236,7 +236,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -250,7 +250,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -265,8 +265,8 @@
                         <li>Deep</li>
                     </ul>
                 </div>
-                <div id="floorsContent" class="content" hidden="yes">
-                    <ul>
+                <div id="floorsContent" class="servicecontent" hidden="yes">
+                    <ul class ="services-ul">
                         <h1>All Rooms</h1>
                         <li>Standard Item</li>
                         <li>Light Item</li>
@@ -277,7 +277,7 @@
                         <li>Light Item</li>
                         <li>Floors</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -291,7 +291,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -305,7 +305,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul>
+                    <ul class ="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -319,12 +319,17 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                </div>
+                </div>  
+            </div>
+        </div>
+     </div>
+ </div>
+</div>
+
             </div>
         </div>
     </div>
-    </div>
-    </div>
+    <div id="footer">
     <footer class="footer">
         <div class="footer-content">
             <div class="bottom clear">
@@ -374,6 +379,8 @@
         </div>
         <!-- End of Footer Content -->
     </footer>
+
+</div>
     <!-- End of Footer -->
 </body>
 

@@ -7,53 +7,93 @@
 
 
 /*Start Services Tabs CSS*/
-.content{
-    display: left;
-    margin: 0 auto;
- }
 
-.content ul{
-display:inline;
-list-style: none;
-padding-top: 20px;
-padding-left: 0;
-padding-right: 30px;
-float: left;
-margin-right: ;
-align-content: left;
-width: auto;
-}
 
-.content li{
-    padding-top: 0 auto;
-    font-size: 20px;
+.services-ul{
+    float: left;
+    display: inline-block;
+    background-color: #6baa6f;
     width: auto;
-    }
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 30px;
 
-.content h1{
+}
+
+.services-ul h1{
+    color: black;
     font-size: 20px;
-    /*width: auto;*/
+    font-weight: 500;
+    
 }
 
-#dontDo {
-    color: red;
+
+
+#services-checklist{
+     background-color: #6baa6f;
+     width: 2000px;
+     padding: none;
+     overflow: hidden:;
 }
+
+
+
+
+.tab {
+    width: auto;
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+.tablinks {
+    width: 200px;
+    float: left;
+    padding-left: 50px;
+    margin: none;
+    text-align: left;
+    font-size:30px;
+
+}
+
 
 .tabs-app {
-    padding-left: 0;
-    margin-left: 20px;
-    margin-top: 30px;
-    width: auto;
+    margin-left: none;
+    width: 2000px;
+    padding: none;
+    overflow: hidden;
+
 }
 
-.tabs-app button{
+.tabs-app button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    color: #b4c4b5;
+
+}
+
+
+.tabs-app button.active {
+    color: #fff;
+    background-color: transparent;
+}
+
+.tabs-app button.focus {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.tabs-app button:hover {
     border: none;
     border-image: none;
     box-shadow: none;
-    background-color: #fff;
-    font-size: 24px;
-    margin-right: 20px;
+    background-color: Transparent;
 }
+
 /*End Services Tabs CSS*/
 
 .styled-select {
@@ -72,7 +112,8 @@ width: auto;
     border: 1px solid #ccc;
 }
 
-.styled-select-mobile label, select {
+.styled-select-mobile label,
+select {
 
     background: #fff;
     width: 200px;
@@ -109,12 +150,9 @@ width: auto;
     background-color: #08B1B1;
 }
 
-.styled-select-mobile button{
-  
-     
-}
+.styled-select-mobile button {}
 
-.styled-select-mobile label{
+.styled-select-mobile label {
     margin-bottom: 10px;
     border-radius: 6px;
 }
@@ -173,13 +211,13 @@ width: auto;
 }
 
 .styled-select button:hover {
-   background-color: #08B1B1 ;
+    background-color: #08B1B1;
 }
 
 #wrap {
     width: 620px;
     height: 50px;
-  
+
     margin: 0 auto;
     text-align: center;
     margin-top: 0px;
@@ -196,7 +234,7 @@ width: auto;
 #wrap-bottom {
     width: 620px;
     height: 50px;
-  
+
     margin: 0 auto;
     text-align: center;
     margin-top: 0px;
@@ -227,7 +265,7 @@ width: auto;
     color: transparent;
 }
 
-#wrap-mobile-bottom{
+#wrap-mobile-bottom {
     width: 200px;
     height: 240px;
     margin: 0 auto;
@@ -630,7 +668,7 @@ textarea {
 
 @media screen and (max-width:939px) {
     .hide-on-mobile {
-        display: none!important
+        display: none !important
     }
 }
 
@@ -639,66 +677,80 @@ textarea {
         width: 96%;
         float: left
     }
+
     [col-p="11"] {
         width: 87.83333333%;
         float: left
     }
+
     [col-p="10"] {
         width: 79.66666667%;
         float: left
     }
+
     [col-p="9"] {
         width: 71.5%;
         float: left
     }
+
     [col-p="8"] {
         width: 63.33333333%;
         float: left
     }
+
     [col-p="7"] {
         width: 55.16666667%;
         float: left
     }
+
     [col-p="6"] {
         width: 47%;
         float: left
     }
+
     [col-p="5"] {
         width: 38.83333333%;
         float: left
     }
+
     [col-p="4"] {
         width: 30.66666667%;
         float: left
     }
+
     [col-p="3"] {
         width: 22.5%;
         float: left
     }
+
     [col-p="2"] {
         width: 14.33333333%;
         float: left
     }
+
     [col-p="1"] {
         width: 6.16666667%;
         float: left
     }
+
     .hide-on-phone {
-        display: none!important
+        display: none !important
     }
 }
 
 @media screen and (min-width:1100px) {
+
     .only-on-mobile,
     .only-on-phone {
-        display: none!important
+        display: none !important
     }
 }
 
 @media screen and (min-width:1700px) {
+
     .only-on-mobile,
     .only-on-phone {
-        display: none!important
+        display: none !important
     }
 }
 
@@ -707,65 +759,78 @@ textarea {
         width: 96%;
         float: left
     }
+
     [col-t="11"] {
         width: 87.83333333%;
         float: left
     }
+
     [col-t="10"] {
         width: 79.66666667%;
         float: left
     }
+
     [col-t="9"] {
         width: 71.5%;
         float: left
     }
+
     [col-t="8"] {
         width: 63.33333333%;
         float: left
     }
+
     [col-t="7"] {
         width: 55.16666667%;
         float: left
     }
+
     [col-t="6"] {
         width: 47%;
         float: left
     }
+
     [col-t="5"] {
         width: 38.83333333%;
         float: left
     }
+
     [col-t="4"] {
         width: 30.66666667%;
         float: left
     }
+
     [col-t="3"] {
         width: 22.5%;
         float: left
     }
+
     [col-t="2"] {
         width: 14.33333333%;
         float: left
     }
+
     [col-t="1"] {
         width: 6.16666667%;
         float: left
     }
+
     .hide-on-tablet,
     .only-on-phone {
-        display: none!important
+        display: none !important
     }
 }
 
 @media screen and (max-width:939px) and (min-width:640px) {
+
     .hide-on-tablet,
     .only-on-phone {
-        display: none!important
+        display: none !important
     }
 }
 
 .hidden {
-    display: none!important
+    display: none !important
 }
 
 .clear:after,
@@ -818,471 +883,516 @@ textarea {
 }
 
 .center {
-    float: none!important;
-    margin-left: auto!important;
-    margin-right: auto!important
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important
 }
 
 .mt1 {
-    margin-top: 1vw!important
+    margin-top: 1vw !important
 }
 
 .mb1 {
-    margin-bottom: 1vw!important
+    margin-bottom: 1vw !important
 }
 
 .pt1 {
-    padding-top: 1vw!important
+    padding-top: 1vw !important
 }
 
 .pb1 {
-    padding-bottom: 1vw!important
+    padding-bottom: 1vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt1 {
         margin-top: 10px
     }
+
     .mb1 {
         margin-bottom: 10px
     }
+
     .pt1 {
         padding-top: 10px
     }
+
     .pb1 {
         padding-bottom: 10px
     }
 }
 
 .mt2 {
-    margin-top: 2vw!important
+    margin-top: 2vw !important
 }
 
 .mb2 {
-    margin-bottom: 2vw!important
+    margin-bottom: 2vw !important
 }
 
 .pt2 {
-    padding-top: 2vw!important
+    padding-top: 2vw !important
 }
 
 .pb2 {
-    padding-bottom: 2vw!important
+    padding-bottom: 2vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt2 {
         margin-top: 20px
     }
+
     .mb2 {
         margin-bottom: 20px
     }
+
     .pt2 {
         padding-top: 20px
     }
+
     .pb2 {
         padding-bottom: 20px
     }
 }
 
 .mt3 {
-    margin-top: 3vw!important
+    margin-top: 3vw !important
 }
 
 .mb3 {
-    margin-bottom: 3vw!important
+    margin-bottom: 3vw !important
 }
 
 .pt3 {
-    padding-top: 3vw!important
+    padding-top: 3vw !important
 }
 
 .pb3 {
-    padding-bottom: 3vw!important
+    padding-bottom: 3vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt3 {
         margin-top: 30px
     }
+
     .mb3 {
         margin-bottom: 30px
     }
+
     .pt3 {
         padding-top: 30px
     }
+
     .pb3 {
         padding-bottom: 30px
     }
 }
 
 .mt4 {
-    margin-top: 4vw!important
+    margin-top: 4vw !important
 }
 
 .mb4 {
-    margin-bottom: 4vw!important
+    margin-bottom: 4vw !important
 }
 
 .pt4 {
-    padding-top: 4vw!important
+    padding-top: 4vw !important
 }
 
 .pb4 {
-    padding-bottom: 4vw!important
+    padding-bottom: 4vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt4 {
         margin-top: 40px
     }
+
     .mb4 {
         margin-bottom: 40px
     }
+
     .pt4 {
         padding-top: 40px
     }
+
     .pb4 {
         padding-bottom: 40px
     }
 }
 
 .mt5 {
-    margin-top: 5vw!important
+    margin-top: 5vw !important
 }
 
 .mb5 {
-    margin-bottom: 5vw!important
+    margin-bottom: 5vw !important
 }
 
 .pt5 {
-    padding-top: 5vw!important
+    padding-top: 5vw !important
 }
 
 .pb5 {
-    padding-bottom: 5vw!important
+    padding-bottom: 5vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt5 {
         margin-top: 50px
     }
+
     .mb5 {
         margin-bottom: 50px
     }
+
     .pt5 {
         padding-top: 50px
     }
+
     .pb5 {
         padding-bottom: 50px
     }
 }
 
 .mt6 {
-    margin-top: 6vw!important
+    margin-top: 6vw !important
 }
 
 .mb6 {
-    margin-bottom: 6vw!important
+    margin-bottom: 6vw !important
 }
 
 .pt6 {
-    padding-top: 6vw!important
+    padding-top: 6vw !important
 }
 
 .pb6 {
-    padding-bottom: 6vw!important
+    padding-bottom: 6vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt6 {
         margin-top: 60px
     }
+
     .mb6 {
         margin-bottom: 60px
     }
+
     .pt6 {
         padding-top: 60px
     }
+
     .pb6 {
         padding-bottom: 60px
     }
 }
 
 .mt7 {
-    margin-top: 7vw!important
+    margin-top: 7vw !important
 }
 
 .mb7 {
-    margin-bottom: 7vw!important
+    margin-bottom: 7vw !important
 }
 
 .pt7 {
-    padding-top: 7vw!important
+    padding-top: 7vw !important
 }
 
 .pb7 {
-    padding-bottom: 7vw!important
+    padding-bottom: 7vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt7 {
         margin-top: 70px
     }
+
     .mb7 {
         margin-bottom: 70px
     }
+
     .pt7 {
         padding-top: 70px
     }
+
     .pb7 {
         padding-bottom: 70px
     }
 }
 
 .mt8 {
-    margin-top: 8vw!important
+    margin-top: 8vw !important
 }
 
 .mb8 {
-    margin-bottom: 8vw!important
+    margin-bottom: 8vw !important
 }
 
 .pt8 {
-    padding-top: 8vw!important
+    padding-top: 8vw !important
 }
 
 .pb8 {
-    padding-bottom: 8vw!important
+    padding-bottom: 8vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt8 {
         margin-top: 80px
     }
+
     .mb8 {
         margin-bottom: 80px
     }
+
     .pt8 {
         padding-top: 80px
     }
+
     .pb8 {
         padding-bottom: 80px
     }
 }
 
 .mt9 {
-    margin-top: 9vw!important
+    margin-top: 9vw !important
 }
 
 .mb9 {
-    margin-bottom: 9vw!important
+    margin-bottom: 9vw !important
 }
 
 .pt9 {
-    padding-top: 9vw!important
+    padding-top: 9vw !important
 }
 
 .pb9 {
-    padding-bottom: 9vw!important
+    padding-bottom: 9vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt9 {
         margin-top: 90px
     }
+
     .mb9 {
         margin-bottom: 90px
     }
+
     .pt9 {
         padding-top: 90px
     }
+
     .pb9 {
         padding-bottom: 90px
     }
 }
 
 .mt10 {
-    margin-top: 10vw!important
+    margin-top: 10vw !important
 }
 
 .mb10 {
-    margin-bottom: 10vw!important
+    margin-bottom: 10vw !important
 }
 
 .pt10 {
-    padding-top: 10vw!important
+    padding-top: 10vw !important
 }
 
 .pb10 {
-    padding-bottom: 10vw!important
+    padding-bottom: 10vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt10 {
         margin-top: 100px
     }
+
     .mb10 {
         margin-bottom: 100px
     }
+
     .pt10 {
         padding-top: 100px
     }
+
     .pb10 {
         padding-bottom: 100px
     }
 }
 
 .mt11 {
-    margin-top: 11vw!important
+    margin-top: 11vw !important
 }
 
 .mb11 {
-    margin-bottom: 11vw!important
+    margin-bottom: 11vw !important
 }
 
 .pt11 {
-    padding-top: 11vw!important
+    padding-top: 11vw !important
 }
 
 .pb11 {
-    padding-bottom: 11vw!important
+    padding-bottom: 11vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt11 {
         margin-top: 110px
     }
+
     .mb11 {
         margin-bottom: 110px
     }
+
     .pt11 {
         padding-top: 110px
     }
+
     .pb11 {
         padding-bottom: 110px
     }
 }
 
 .mt12 {
-    margin-top: 12vw!important
+    margin-top: 12vw !important
 }
 
 .mb12 {
-    margin-bottom: 12vw!important
+    margin-bottom: 12vw !important
 }
 
 .pt12 {
-    padding-top: 12vw!important
+    padding-top: 12vw !important
 }
 
 .pb12 {
-    padding-bottom: 12vw!important
+    padding-bottom: 12vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt12 {
         margin-top: 120px
     }
+
     .mb12 {
         margin-bottom: 120px
     }
+
     .pt12 {
         padding-top: 120px
     }
+
     .pb12 {
         padding-bottom: 120px
     }
 }
 
 .mt13 {
-    margin-top: 13vw!important
+    margin-top: 13vw !important
 }
 
 .mb13 {
-    margin-bottom: 13vw!important
+    margin-bottom: 13vw !important
 }
 
 .pt13 {
-    padding-top: 13vw!important
+    padding-top: 13vw !important
 }
 
 .pb13 {
-    padding-bottom: 13vw!important
+    padding-bottom: 13vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt13 {
         margin-top: 130px
     }
+
     .mb13 {
         margin-bottom: 130px
     }
+
     .pt13 {
         padding-top: 130px
     }
+
     .pb13 {
         padding-bottom: 130px
     }
 }
 
 .mt14 {
-    margin-top: 14vw!important
+    margin-top: 14vw !important
 }
 
 .mb14 {
-    margin-bottom: 14vw!important
+    margin-bottom: 14vw !important
 }
 
 .pt14 {
-    padding-top: 14vw!important
+    padding-top: 14vw !important
 }
 
 .pb14 {
-    padding-bottom: 14vw!important
+    padding-bottom: 14vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt14 {
         margin-top: 140px
     }
+
     .mb14 {
         margin-bottom: 140px
     }
+
     .pt14 {
         padding-top: 140px
     }
+
     .pb14 {
         padding-bottom: 140px
     }
 }
 
 .mt15 {
-    margin-top: 15vw!important
+    margin-top: 15vw !important
 }
 
 .mb15 {
-    margin-bottom: 15vw!important
+    margin-bottom: 15vw !important
 }
 
 .pt15 {
-    padding-top: 15vw!important
+    padding-top: 15vw !important
 }
 
 .pb15 {
-    padding-bottom: 15vw!important
+    padding-bottom: 15vw !important
 }
 
 @media screen and (max-width:639px) {
     .mt15 {
         margin-top: 150px
     }
+
     .mb15 {
         margin-bottom: 150px
     }
+
     .pt15 {
         padding-top: 150px
     }
+
     .pb15 {
         padding-bottom: 150px
     }
@@ -1485,6 +1595,7 @@ p:last-child {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .p,
     p {
         font-size: 15px
@@ -1492,6 +1603,7 @@ p:last-child {
 }
 
 @media screen and (max-width:939px) {
+
     .p,
     p {
         font-size: 15px
@@ -1540,11 +1652,11 @@ h1 {
 h1.large {
     font-size: 62px;
     color: #14374c;
-    margin-bottom: 0
-    text-align:center;
+    margin-bottom: 0 text-align:center;
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .h1.large,
     h1.large {
         font-size: 56px
@@ -1552,6 +1664,7 @@ h1.large {
 }
 
 @media screen and (max-width:939px) {
+
     .h1.large,
     h1.large {
         font-size: 52px
@@ -1559,10 +1672,10 @@ h1.large {
 }
 
 @media screen and (max-width:639px) {
+
     .h1.large,
     h1.large {
-        font-size: 44px
-        text-align:center;
+        font-size: 44px text-align:center;
     }
 }
 
@@ -1572,6 +1685,7 @@ h1.white {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .h1,
     h1 {
         font-size: 44px
@@ -1579,6 +1693,7 @@ h1.white {
 }
 
 @media screen and (max-width:939px) {
+
     .h1,
     h1 {
         font-size: 40px
@@ -1586,6 +1701,7 @@ h1.white {
 }
 
 @media screen and (max-width:639px) {
+
     .h1,
     h1 {
         font-size: 32px
@@ -1608,6 +1724,7 @@ h2.white {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .h2,
     h2 {
         font-size: 28px
@@ -1615,6 +1732,7 @@ h2.white {
 }
 
 @media screen and (max-width:939px) {
+
     .h2,
     h2 {
         font-size: 26px
@@ -1622,6 +1740,7 @@ h2.white {
 }
 
 @media screen and (max-width:639px) {
+
     .h2,
     h2 {
         font-size: 22px;
@@ -1664,6 +1783,7 @@ h5 {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .h3,
     h3 {
         font-size: 16px
@@ -1671,6 +1791,7 @@ h5 {
 }
 
 @media screen and (max-width:939px) {
+
     .h3,
     h3 {
         font-size: 14px
@@ -1684,6 +1805,7 @@ h4 {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .h4,
     h4 {
         font-size: 22px
@@ -1691,6 +1813,7 @@ h4 {
 }
 
 @media screen and (max-width:939px) and (min-width:640px) {
+
     .h4,
     h4 {
         font-size: 20px
@@ -1698,6 +1821,7 @@ h4 {
 }
 
 @media screen and (max-width:939px) {
+
     .h4,
     h4 {
         font-size: 18px;
@@ -1713,6 +1837,7 @@ h5 {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .h5,
     h5 {
         font-size: 17px
@@ -1720,6 +1845,7 @@ h5 {
 }
 
 @media screen and (max-width:939px) and (min-width:640px) {
+
     .h5,
     h5 {
         font-size: 16px
@@ -1727,6 +1853,7 @@ h5 {
 }
 
 @media screen and (max-width:939px) {
+
     .h5,
     h5 {
         font-size: 14px;
@@ -1847,12 +1974,15 @@ a.cta-link:hover:after {
         padding-top: 40px;
         padding-bottom: 60px
     }
+
     .closing-cta-section h1 {
         margin-bottom: 40px
     }
+
     .closing-cta-section .svg {
         padding-bottom: 40px
     }
+
     .page-cleaning-office .closing-cta-section .btn-large {
         margin-top: 10px
     }
@@ -1897,7 +2027,7 @@ button[type=submit] {
 a.button.disabled,
 button.disabled,
 button[type=submit].disabled {
-    background-color: #c9ced1!important;
+    background-color: #c9ced1 !important;
     color: #fff;
     cursor: wait
 }
@@ -2108,6 +2238,7 @@ button[type=submit]:hover[disabled] {
 }
 
 @media screen and (max-width:740px) and (orientation :landscape) {
+
     a.button,
     button,
     button[type=submit] {
@@ -2150,6 +2281,7 @@ form textarea {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     form input,
     form textarea {
         font-size: 15px
@@ -2157,6 +2289,7 @@ form textarea {
 }
 
 @media screen and (max-width:939px) {
+
     form input,
     form textarea {
         font-size: 15px
@@ -2325,8 +2458,7 @@ header.header .logo-wrapper a {
 header.header .logo-wrapper img {
     height: 34px;
     width: auto;
-    margin-top: 13px
-    margin-right: 20px;
+    margin-top: 13px margin-right: 20px;
     margin-bottom: 18px;
 }
 
@@ -2374,6 +2506,7 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
         width: auto;
         margin-top: 11px
     }
+
     header.header .logo-wrapper .extra-meta {
         display: none
     }
@@ -2498,6 +2631,7 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
     header.header .mobile-menu-button {
         display: block
     }
+
     header.header .main-nav {
         position: fixed;
         float: none;
@@ -2516,6 +2650,7 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
         -o-transform: scale(1.1, 1.1);
         transform: scale(1.1, 1.1)
     }
+
     header.header .main-nav ul:not(.mobile-bottom-nav) {
         position: absolute;
         height: 90%;
@@ -2531,13 +2666,16 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
         -webkit-justify-content: center;
         justify-content: center
     }
+
     header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item {
         float: none;
         margin-left: 8.16666667%
     }
+
     header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a {
         font-size: 24px
     }
+
     header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a.btn-static {
         display: none
     }
@@ -2555,6 +2693,7 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
         justify-content: flex-start;
         padding-top: 20px
     }
+
     header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item {
         margin-bottom: 0
     }
@@ -2609,9 +2748,9 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
 .footer .footer-content {
     width: 96%;
-    float: none!important;
-    margin-left: auto!important;
-    margin-right: auto!important
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important
 }
 
 .footer .footer-content .top-bar {
@@ -2726,25 +2865,31 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         margin-top: 1vw;
         padding-bottom: 1vw
     }
+
     .footer .footer-content .top-bar>.svg {
         height: 30px;
         margin-top: 5px
     }
+
     .footer .footer-content .top-bar>ul {
         float: right
     }
+
     .footer .footer-content .top-bar>ul li {
         height: 30px;
         margin-left: 20px;
         margin-top: 5px
     }
+
     .footer .footer-content .top-bar>ul li img {
         max-height: 20px
     }
+
     .footer .footer-content .bottom .column {
         width: 34.02777778%;
         float: left
     }
+
     .footer .footer-content .bottom .column.large {
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -2752,16 +2897,20 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         border-bottom: 1px solid #edeeef;
         width: 100%
     }
+
     .footer .footer-content .bottom .column:last-child {
         width: 27.77777778%
     }
+
     .footer .footer-content .bottom .column .footer-col-title {
         font-size: 14px;
         margin-bottom: 10px
     }
+
     .footer .footer-content .bottom .column ul li {
         margin-bottom: 5px
     }
+
     .footer .footer-content .bottom .column ul li a {
         font-size: 13px
     }
@@ -2775,6 +2924,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
+
     .split-cta-section .left-side,
     .split-cta-section .right-side {
         height: 450px
@@ -2782,6 +2932,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 @media screen and (max-width:939px) {
+
     .split-cta-section .left-side,
     .split-cta-section .right-side {
         height: 450px
@@ -2930,6 +3081,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         min-height: 500px;
         height: 80vh
     }
+
     .homepage-hero .hero-bk-holder {
         display: -webkit-flex;
         display: flex;
@@ -2940,6 +3092,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         -webkit-justify-content: flex-end;
         justify-content: flex-end
     }
+
     .homepage-hero .meta-info {
         display: none
     }
@@ -3012,10 +3165,12 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     .about-intro-section ul.cities li {
         font-size: 15px
     }
+
     .about-intro-section .left-side {
         margin-left: 8.16666667%;
         width: 34.66666667%
     }
+
     .about-intro-section .right-side {
         margin-right: 8.16666667%;
         width: 40.83333333%
@@ -3026,10 +3181,12 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     .about-intro-section ul.cities li {
         font-size: 15px
     }
+
     .about-intro-section .left-side {
         margin-left: 8.16666667%;
         width: 34.66666667%
     }
+
     .about-intro-section .right-side {
         margin-right: 8.16666667%;
         width: 40.83333333%
@@ -3040,20 +3197,24 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     .about-intro-section {
         padding: 0 0 60px
     }
+
     .about-intro-section .left-side,
     .about-intro-section .right-side {
         margin-left: 8.16666667%;
         margin-right: 8.16666667%;
         width: 83.66666667%
     }
+
     .about-intro-section .left-side h1,
     .about-intro-section .right-side h1 {
         margin-bottom: 20px
     }
+
     .about-intro-section .left-side .meta-info ul,
     .about-intro-section .right-side .meta-info ul {
         margin: 20px 0
     }
+
     .about-intro-section .left-side .meta-info ul li,
     .about-intro-section .right-side .meta-info ul li {
         line-height: 1.65;
@@ -3064,10 +3225,12 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         margin: 0 0 10px;
         color: #16374b
     }
+
     .about-intro-section .left-side .meta-info ul li:last-child,
     .about-intro-section .right-side .meta-info ul li:last-child {
         margin-bottom: 0
     }
+
     .about-intro-section .left-side .meta-info ul li object,
     .about-intro-section .left-side .meta-info ul li>.svg,
     .about-intro-section .right-side .meta-info ul li object,
@@ -3075,6 +3238,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         margin: 0 10px -2px 0;
         max-height: 16px
     }
+
     .about-intro-section ul.cities {
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -3086,6 +3250,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 @media screen and (max-width:639px) and screen and (max-width:1099px) and (min-width:940px) {
+
     .about-intro-section .left-side .meta-info ul li,
     .about-intro-section .right-side .meta-info ul li {
         font-size: 15px
@@ -3093,6 +3258,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 @media screen and (max-width:639px) and screen and (max-width:939px) {
+
     .about-intro-section .left-side .meta-info ul li,
     .about-intro-section .right-side .meta-info ul li {
         font-size: 15px
@@ -3107,6 +3273,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     -moz-background-size: contain;
     -o-background-size: contain;
     -ms-background-size: contain;
+
     background-size: contain img.center {
         display: block;
         margin: 0 auto;
@@ -3121,9 +3288,9 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
 .steps-section .steps {
     width: 83.66666667%;
-    float: none!important;
-    margin-left: auto!important;
-    margin-right: auto!important;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -3163,6 +3330,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         -ms-background-size: contain;
         background-size: contain
     }
+
     .steps-section .steps {
         width: 85.66666667%
     }
@@ -3178,6 +3346,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         -ms-background-size: contain;
         background-size: contain
     }
+
     .steps-section .steps {
         width: 96%
     }
@@ -3193,14 +3362,17 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         -ms-background-size: contain;
         background-size: contain
     }
+
     .steps-section .steps {
         -webmit-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 83.66666667%
     }
+
     .steps-section .steps .step {
         width: 100%
     }
+
     .steps-section .steps .step .svg,
     .steps-section .steps .step object {
         padding: 15px;
@@ -3216,6 +3388,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
         max-width: 30px;
         float: left
     }
+
     .steps-section .steps .text {
         width: 77%;
         float: left
