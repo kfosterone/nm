@@ -6,17 +6,193 @@
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 
 
+
+
+/*Atheltas Font CSS*/
+
+@font-face {
+font-family: 'Athelas Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Athelas Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Athelas Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Athelas Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
+}
+
+/*End Athletas Font CSS*/
+
+#nm-logo {
+    font-family: 'Athelas-Bold';
+    font-size: 50px;
+    color:#009999;
+    letter-spacing: 6px;
+    margin-left: 20px;
+}
+
+#nm-logo-small {
+    font-family: 'Athelas-Bold';
+    font-size: 30px;
+    color:#009999;
+    letter-spacing: 6px;
+}
+
+
 /*Start Services Tabs CSS*/
+
+.servicepage-hero {
+    width: 100vw;
+    height: 30vw;
+    min-height:300px;
+    max-height: 500px;
+    position: relative
+}
+
+.servicepage-hero h1{
+    margin-top: 100px;
+    color: white;
+}
+
+.servicepage-hero .hero-bk-holder {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.servicepage-hero .text {
+    margin-bottom: 60px
+}
+
+.servicepage-hero .text .svg,
+.servicepage-hero .text object {
+    height: 40px;
+    margin: 0 20px 0 0
+}
+
+.servicepage-hero .meta-info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%
+}
+
+.servicepage-hero .meta-info ul {
+    text-align: center
+}
+
+.servicepage-hero .meta-info ul li {
+    display: inline-block;
+    margin: 0 3vw 15px;
+    font-size: 16px
+}
+
+.servicepage-hero .meta-info ul li:last-child {
+    margin-bottom: 0
+}
+
+@media screen and (max-width:1099px) and (min-width:940px) {
+    .servicepage-hero .meta-info ul li {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width:939px) {
+    .servicepage-hero .meta-info ul li {
+        font-size: 15px
+    }
+}
+
+.servicepage-hero .meta-info ul li object,
+.servicepage-hero .meta-info ul li>.svg {
+    margin: 0 10px -2px;
+    max-height: 16px
+}
+
+@media screen and (max-width:939px) and (min-width:640px) {
+    .servicepage-hero .meta-info ul li {
+        margin: 0 1vw;
+        font-size: 13px
+    }
+}
+
+@media screen and (max-width:639px) {
+    .servicepage-hero {
+        min-height: 500px;
+        height: 80vh
+    }
+
+    .servicepage-hero .hero-bk-holder {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end
+    }
+
+    .servicepage-hero .meta-info {
+        display: none
+    }
+}
+
+@media screen and (max-width:740px) and (orientation :landscape) {
+    .servicepage-hero {
+        min-height: 100vh
+    }
+}
 
 
 .services-ul{
     float: left;
     display: inline-block;
     background-color: #6baa6f;
-    width: auto;
+    width: 12vw;
     padding-left: 50px;
     padding-right: 20px;
     padding-top: 30px;
+    padding-bottom:40px;
+    color: black;
+    font-size: 18px;
 
 }
 
@@ -24,6 +200,7 @@
     color: black;
     font-size: 20px;
     font-weight: 500;
+
     
 }
 
@@ -32,7 +209,7 @@
 #services-checklist{
      background-color: #6baa6f;
      width: 2000px;
-     padding: none;
+     padding: 50px;
      overflow: hidden:;
 }
 
@@ -47,9 +224,10 @@
 }
 
 .tablinks {
-    width: 200px;
+    width: auto;
     float: left;
-    padding-left: 50px;
+    padding: 50px;
+    padding-bottom: 70px;
     margin: none;
     text-align: left;
     font-size:30px;
@@ -2418,8 +2596,8 @@ header.header.logo-wrapper>a {
 }
 
 header.header .content {
-    margin-left: 10.16666667%;
-    margin-right: 10.16666667%;
+    margin-left: 5.16666667%;
+    margin-right: 5.16666667%;
     margin-top: 60px;
     height: 60px
 }
@@ -2757,7 +2935,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     margin-top: 1.5vw;
     padding-bottom: 1.5vw;
     height: 40px;
-    border-bottom: 1px solid #c9ced1
+    border-bottom: 1px solid #c9ced1;
 }
 
 .footer .footer-content .top-bar>.svg {
@@ -2783,7 +2961,10 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom {
-    margin-top: 1.5vw
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+    margin-left: 5.16666667%;
+    margin-right: 5.16666667%;
 }
 
 .footer .footer-content .bottom .column {
@@ -2852,8 +3033,10 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom-bar p {
+    margin-left: 5.16666667%;
     font-size: 12px;
-    color: #9fa4a6
+    color: #9fa4a6;
+    padding-bottom: 2vw;
 }
 
 .footer .footer-content .bottom-bar p a {
