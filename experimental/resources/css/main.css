@@ -49,6 +49,10 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     color:#009999;
     letter-spacing: 6px;
     margin-left: 20px;
+    margin-bottom: none;
+    padding: none;
+    line-height: auto;
+    border-style: none;
 }
 
 #nm-logo-small {
@@ -71,7 +75,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 .servicepage-hero h1{
     margin-top: 100px;
-    color: white;
+    color: #003a3a;
 }
 
 .servicepage-hero .hero-bk-holder {
@@ -191,13 +195,13 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom:40px;
-    color: black;
+    color: #003a3a;
     font-size: 18px;
 
 }
 
 .services-ul h1{
-    color: black;
+    color: #003a3a;
     font-size: 20px;
     font-weight: 500;
 
@@ -2660,22 +2664,22 @@ header.header .logo-wrapper.grey img {
 header.header .logo-wrapper .extra-meta {
     float: left;
     margin-left: 20px;
-    line-height: 34px;
-    margin-top: 13px;
-    font-family: Merriweather, serif;
+    line-height: auto;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
     font-style: italic;
     font-size: 14px;
-    color: #9fa4a6
+    color: #66cccc
 }
 
 header.header .logo-wrapper .extra-meta>span.green {
-    color: #005200
+    color: #66cccc;
 }
 
 header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
     content: '|';
     position: relative;
-    padding: 0 8px 0 5px
+    padding: none;
 }
 
 @media screen and (max-width:939px) {
@@ -2961,7 +2965,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom {
-    margin-top: 1.5vw;
+    margin-top: 2vw;
     margin-bottom: 1vw;
     margin-left: 5.16666667%;
     margin-right: 5.16666667%;
@@ -2985,7 +2989,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     font-family: BrownStd, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: #16374b;
+    color: #009999;
     margin-bottom: 20px;
     display: block
 }
@@ -2998,7 +3002,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 .footer .footer-content .bottom .column ul li a {
     font-family: BrownStd, Helvetica, sans-serif;
     font-size: 14px;
-    color: #16374b;
+    color: #9fa4a6;
     -webkit-transition: color 250ms 0s ease;
     -moz-transition: color 250ms 0s ease;
     -ms-transition: color 250ms 0s ease;
@@ -3019,7 +3023,11 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom .column .extra-meta>span.green {
-    color: #005200
+    color: #66cccc;
+}
+
+.footer .footer-content .bottom .column .extra-meta>a.grey {
+    color: #9fa4a6;
 }
 
 .footer .footer-content .bottom .column .extra-meta>span:not(:first-child):before {
@@ -3087,7 +3095,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
     .footer .footer-content .bottom .column .footer-col-title {
         font-size: 14px;
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
 
     .footer .footer-content .bottom .column ul li {
