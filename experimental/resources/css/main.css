@@ -62,6 +62,21 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     letter-spacing: 6px;
 }
 
+.nm-logo {
+    font-family: 'Athelas-Bold';
+    font-size: 5vw;
+    color:#009999;
+    letter-spacing: 6px;
+    margin-top : 20px;
+    margin-left: 20px;
+    margin-right: none;
+    padding: none;
+    line-height: auto;
+    border-style: none;
+    float: left;
+
+}
+
 
 /*Start Services Tabs CSS*/
 
@@ -75,7 +90,12 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 .servicepage-hero h1{
     margin-top: 100px;
+    font-family: BrownStd, Helvetica, sans-serif;
     color: #003a3a;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+
 }
 
 .servicepage-hero .hero-bk-holder {
@@ -253,7 +273,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     border: none;
     overflow: hidden;
     outline: none;
-    color: #b4c4b5;
+    color: #9fa4a6;
 
 }
 
@@ -316,7 +336,7 @@ select {
 .styled-select-mobile button {
 
     display: block;
-    background: #008080;
+    background: #009999;
     width: 200px;
     font-size: 16px;
     line-height: 1;
@@ -340,7 +360,7 @@ select {
 }
 
 #button-bottom {
-    color: #000000;
+    color: #003a3a;
     height: 50px;
     border-radius: 3px;
 }
@@ -377,7 +397,7 @@ select {
 
 .styled-select button {
     margin: 0px;
-    background: #008080;
+    background: #009999;
     width: 200px;
     padding-left: 0px;
     padding-right: 0px;
@@ -449,7 +469,7 @@ select {
 
 #wrap-mobile-bottom {
     width: 200px;
-    height: 240px;
+    height: auto;
     margin: 0 auto;
     text-align: center;
     margin-top: 0px;
@@ -1637,8 +1657,7 @@ ul li {
 
 
 
-.bk-img-holder,
-header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a.btn-static {
+#login-button {
     -webkit-transition: all 250ms 0s ease-in-out;
     -moz-transition: all 250ms 0s ease-in-out;
     -ms-transition: all 250ms 0s ease-in-out;
@@ -1878,7 +1897,9 @@ h1.white {
 
     .h1,
     h1 {
-        font-size: 40px
+        font-size: 30px;
+        padding-bottom :none;
+        margin-bottom: none;
     }
 }
 
@@ -1886,7 +1907,7 @@ h1.white {
 
     .h1,
     h1 {
-        font-size: 32px
+        font-size: 28px
     }
 }
 
@@ -1946,7 +1967,7 @@ h3.grey {
 
 .h3.blue,
 h3.blue {
-    color: #008080
+    color: #009999
 }
 
 .h3.red,
@@ -2112,7 +2133,7 @@ a.cta-link:hover:after {
 }
 
 .btn-primary {
-    background-color: #008080;
+    background-color: #009999;
     color: #fff
 }
 
@@ -2128,7 +2149,7 @@ a.cta-link:hover:after {
 
 
 .closing-cta-section {
-    background-color: #008080;
+    background-color: #009999;
     padding-top: 160px;
     padding-bottom: 160px;
     display: -webkit-flex;
@@ -2189,10 +2210,10 @@ button[type=submit] {
     -moz-appearance: none;
     width: 100%;
     outline: 0;
-    border: 1px solid #008080;
+    border: 1px solid #009999;
     height: 64px;
     line-height: 62px;
-    background-color: #008080;
+    background-color: #009999;
     padding: 0 15px;
     color: #fff;
     -webkit-transition: background 250ms 0s ease;
@@ -2346,13 +2367,13 @@ button[type=submit].form-btn {
 a.button.active,
 button.active,
 button[type=submit].active {
-    background-color: #008080
+    background-color: #009999
 }
 
 a.button.green,
 button.green,
 button[type=submit].green {
-    background-color: #008080;
+    background-color: #009999;
     border: none
 }
 
@@ -2488,7 +2509,7 @@ form textarea:checked {
 
 form input:focus,
 form textarea:focus {
-    border-color: #008080;
+    border-color: #009999;
     z-index: 1000
 }
 
@@ -2546,7 +2567,7 @@ form label a {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0;
-    color: #008080
+    color: #009999
 }
 
 
@@ -2628,9 +2649,11 @@ header.header .content {
         margin-left: 5.08333333%;
         margin-right: 5.08333333%;
         margin-top: 20px;
+        margin-bottom: 40px;
         height: 50px
     }
 }
+
 
 header.header .logo-wrapper,
 header.header .logo-wrapper a {
@@ -2661,15 +2684,16 @@ header.header .logo-wrapper.grey img {
     transition: opacity 350ms 0s ease
 }
 
+
 header.header .logo-wrapper .extra-meta {
     float: left;
     margin-left: 20px;
     line-height: auto;
-    margin-top: 40px;
-    font-family: Arial, sans-serif;
+    margin-top: 43px;
+    font-family: BrownStd, Helvetica, sans-serif;
     font-style: italic;
     font-size: 14px;
-    color: #66cccc
+    color: #9fa4a6;
 }
 
 header.header .logo-wrapper .extra-meta>span.green {
@@ -2686,7 +2710,11 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
     header.header .logo-wrapper img {
         height: 28px;
         width: auto;
-        margin-top: 11px
+    }
+
+    .nm-logo {
+        font-size: 30px;
+        letter-spacing: none;
     }
 
     header.header .logo-wrapper .extra-meta {
@@ -2698,9 +2726,63 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
     header.header .logo-wrapper img {
         height: 24px;
         width: auto;
-        margin-top: 13px
+        margin-top: 13px;
+    }
+
+    #login-button{
+        border-style:none;
+        padding: 0px;
+    }
+
+  /* #login-button:hover {
+        border: none;
+        padding: none;
+        margin: none;
+        padding: 0px 0px;
+        background-color: transparent;
+   }*/
+
+    .nm-logo {
+
+        font-size: 20px;
+        letter-spacing: none;
+        margin-left: 5px;
+        margin-right: none;
+
     }
 }
+
+@media screen and (max-width:639px) {
+    header.header .logo-wrapper img {
+        height: 24px;
+        width: auto;
+        margin-top: 13px;
+    }
+
+    #login-button{
+        border-style:none;
+        padding: 0px;
+    }
+
+  /* #login-button:hover {
+        border: none;
+        padding: none;
+        margin: none;
+        padding: 0px 0px;
+        background-color: transparent;
+   }*/
+
+    .nm-logo {
+
+        font-size: 20px;
+        letter-spacing: none;
+        margin-left: 5px;
+        margin-right: none;
+
+    }
+}
+
+
 
 header.header .mobile-menu-button {
     position: relative;
@@ -2772,11 +2854,6 @@ header.header .main-nav {
     transition: height 0s 650ms ease, z-index 0s 650ms ease, opacity 350ms 50ms cubic-bezier(.165, .84, .44, 1), transform 650ms 0s cubic-bezier(.165, .84, .44, 1)
 }
 
-header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item {
-    float: left;
-    margin-left: 40px;
-    margin-top: 13px
-}
 
 header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a {
     line-height: 34px;
@@ -2790,26 +2867,26 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a {
     transition: color 250ms 0s ease-in-out
 }
 
-header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a.btn-static {
-    padding: 10px 25px;
-    color: #008080;
-    border: 1px solid #008080;
+ #login-button{
+    padding: 10px;
+    color: #009999;
+    border: 1px;
+    border-style: solid;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     transition: all 250ms 0s ease-in-out
 }
 
-header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a.btn-static:hover {
-    background-color: #008080;
-    color: #fff
+#login-button:hover {
+    background-color: transparent;
 }
 
 header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
-    color: #008080
+    color: #009999
 }
 
-@media screen and (max-width:939px) {
+/*@media screen and (max-width:939px) {
     header.header .mobile-menu-button {
         display: block
     }
@@ -2861,9 +2938,9 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
     header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a.btn-static {
         display: none
     }
-}
+}*/
 
-@media screen and (max-width:740px) and (orientation :landscape) {
+/*@media screen and (max-width:740px) and (orientation :landscape) {
     header.header .main-nav ul:not(.mobile-bottom-nav) {
         display: -webkit-flex;
         display: flex;
@@ -2879,7 +2956,7 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a:hover {
     header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item {
         margin-bottom: 0
     }
-}
+}*/
 
 header.header .mobile-bottom-nav {
     display: none;
@@ -2903,8 +2980,8 @@ header.header .mobile-bottom-nav li:first-child {
 
 header.header .mobile-bottom-nav li a.btn-static {
     padding: 20px 25px;
-    color: #008080;
-    border: 1px solid #008080;
+    color: #009999;
+    border: 1px solid #009999;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -2918,15 +2995,15 @@ header.header .mobile-bottom-nav li a.btn-static {
 }
 
 header.header .mobile-bottom-nav li a.btn-static:hover {
-    background-color: #008080;
+    background-color: #009999;
     color: #fff
 }
 
-@media screen and (max-width:939px) {
+/*@media screen and (max-width:939px) {
     header.header .mobile-bottom-nav {
         display: block
     }
-}
+}*/
 
 .footer .footer-content {
     width: 96%;
@@ -2947,12 +3024,12 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .top-bar>ul {
-    float: right
+    float: right;
 }
 
 .footer .footer-content .top-bar>ul li {
     height: 40px;
-    float: left;
+    float: right;
     margin-left: 40px;
     display: -webkit-flex;
     display: flex;
@@ -2990,6 +3067,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     font-weight: 700;
     font-size: 16px;
     color: #009999;
+    margin-top:15px;
     margin-bottom: 20px;
     display: block
 }
@@ -3398,6 +3476,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
     .about-intro-section .left-side h1,
     .about-intro-section .right-side h1 {
+        margin-top: 40px;
         margin-bottom: 20px
     }
 

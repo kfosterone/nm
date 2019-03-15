@@ -54,30 +54,28 @@
 </head>
 
 <body onload="defaultButtonText()">
-    <header class="header clear">
+     <header class="header clear">
         <div class="content">
             <div class="logo-wrapper">
                 <a href="" title="Nature Maid">
-         <img src="resources/images/logo.svg" alt="Nature Maid">
-      </a>
-                <div class="extra-meta">
-                    <span>Natural House Cleaning Service</span>
-                </div>
+                    <!--p id='nm-logo'>Nature Maid</p-->
+                    <p class ="nm-logo">Nature Maid</p>
+                </a>
+                <!--div class="extra-meta">
+                    <span>A natural house cleaning service</span>
+                </div-->
             </div>
             <!-- /logo-wrapper -->
-            <div class="mobile-menu-button clear">
+            <!--div class="mobile-menu-button clear">
                 <span></span><span></span>
-            </div>
+            </div-->
             <nav class="main-nav" role='navigation'>
                 <ul>
-                    <!--li class="nav-item"><a href="home-cleaning" title="Home Cleaning">Home Cleaning</a></li-->
-                    <!--li class="nav-item"><a href="office-cleaning" title="Commercial Cleaning">Commercial Cleaning</a></li-->
-                    <!--li class="nav-item"><a href="faq" title="FAQ">FAQ</a></li-->
-                    <li class="nav-item"><a class="btn-static" href="https://naturemaidclean.launch27.com/login" title="Login" target="_blank">Login</a></li>
+                    <li class="nav-item"><a href="https://naturemaidclean.launch27.com/login" title="Login" target="_blank" id="login-button">Login</a></li>
                 </ul>
                 <ul class="mobile-bottom-nav">
                     <li class="nav-item"><a class="btn-static" href="#login" title="home cleaning" target="_blank">Login</a></li>
-                    <!--li class="nav-item"><a class="btn-static" href="/booknow">Book Clean</a></li-->
+                    <li class="nav-item"><a class="btn-static" href="/booknow">Book Clean</a></li>
                 </ul>
             </nav>
             <!-- /main-nav -->
@@ -92,7 +90,7 @@
                 <div class="homepage-hero">
                     <div id="sign-up-estimate" class=" js-lazy hero-bk-holder" data-bgset="resources/images/hero-image.jpeg" style="background-image:url(resources/images/hero-image.jpeg);">
                         <div class="text">
-                            <h1>A cleaner home. Naturally.</h1>
+                            <h1>Get a quick price quote.</h1>
                         </div>
                         <!-- This is the include for the input action-bar -->
                         <div class="styled-select hide-on-phone" id="wrap">
@@ -244,7 +242,7 @@
     <div id="sign-up-estimate-end" class="closing-cta-section clear">
         <h1 class="white">Ready to get clean?</h1>
         <div class="styled-select hide-on-phone" id="wrap-bottom">
-            <form action" id="price-quote">
+            <!--form action" id="price-quote">
                 <select id="bedroom-bottom" onchange="calculateTotalBottom()">
                     <option value="0">Studio</span>
                     </option>
@@ -253,28 +251,29 @@
                     <option value="3">3 Bedroom</option>
                     <option value="4">4 Bedroom</option>
                     <option value="5">5 Bedroom</option>
-                </select>
+                </select-->
                 <!-- =========================================================== -->
-                <select id="bathroom-bottom" onchange="calculateTotalBottom()">
+                <!--select id="bathroom-bottom" onchange="calculateTotalBottom()">
                     <option value="1">1 Bathroom</option>
                     <option value="2">2 Bathroom</option>
                     <option value="3">3 Bathroom</option>
                     <option value="4">4 Bathroom</option>
                     <option value="5">5 Bathroom</option>
-                </select>
+                </select-->
                 <!-- =========================================================== -->
-                <select id="service-bottom" onchange="calculateTotalBottom()">
+                <!--select id="service-bottom" onchange="calculateTotalBottom()">
                     <option value="light">Light</option>
                     <option value="standard">Standard</option>
                     <option value="deep">Deep</option>
                 </select>
                 <button id="button-bottom">Book now for $85</button>
-            </form>
+            </form-->
+            <a href='/booknow' target='_blank'><button id="button-bottom">Book now</button><a>
         </div>
 
 
         <div class="styled-select-mobile only-on-phone" id="wrap-mobile-bottom" onload="defaultButtonText()">
-            <form action" id="price-quote">
+            <!--form action" id="price-quote">
                <label> 
                 <select id="bedroom-bottom-mob" onchange="TotalBottomMob()">
                     <option value="0">Studio</span>
@@ -303,9 +302,10 @@
                 </select>
             </label>
             <label> 
-                <button class="" id="button-bottom-mob">Book now for $85</button>
+                <button class="" id="button-bottom-mob">Book now</button>
             </form>
-        </label>
+        </label-->
+        <a href='/booknow' target='_blank'><button id="button-bottom-mob">Book now</button><a>
         </div>
         <!-- End of Action-Bar -->
     </div>
@@ -313,25 +313,25 @@
     </section>
     <!-- </div> -->
     </div>
+    <div id="footer">
     <footer class="footer">
         <div class="footer-content">
             <div class="bottom clear">
                 <div class="column large">
-                    <p><img src="resources/images/logo.svg" alt="Nature Maid"></p>
-                    <div class="extra-meta">
-                        <a href="tel:17733575236" target="_blank"><span class="green" target="_blank">773-357-5236</span>
-        </div>
-      </div> <!-- END OF COL -->
-
-      <div class="column">
-        <span class="footer-col-title">Company</span>
-        <ul>
-          <!--li><a href="/about-us" >About Us</a></li-->
-                        <li><a href="mailto:info@naturemaidclean.com" target="_blank">Contact Us</a></li>
-                        </ul>
+                    <p id='nm-logo-small'>Nature Maid</p>
+                    <div class ="extra-meta">
+                        <a href="tel:17733575236" target="_blank" class ="grey"><span target="_blank">773-357-5236</span></a>
                     </div>
-                    <!-- END OF COL -->
-                    <!--div class="column">
+                </div> <!-- END OF COL -->
+                <div class="column">
+                    <span class="footer-col-title">Company</span>
+                    <ul>
+                        <!--li><a href="/about-us" >About Us</a></li-->
+                        <li><a href="mailto:info@naturemaidclean.com" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- END OF COL -->
+                <!--div class="column">
                         <span class="footer-col-title">Our Services</span>
                         <ul>
                             <li><a href="/home-cleaning">Home Cleaning</a></li>
@@ -339,29 +339,29 @@
                             <li><a href="/home-cleaning#checklist">Cleaning Checklist</a></li>
                         </ul>
                     </div-->
-                    <!-- END OF COL -->
-                     <!-- END OF COL -->
-                    <div class="column">
-                        <span class="footer-col-title">Services</span>
-                        <ul>
-                            <li><a target="_blank">Coming Soon</a></li>
-                        </ul>
-                    </div>
-                    <!-- END OF COL -->
-                       <div class="column">
+                <!-- END OF COL -->
+                <!-- END OF COL -->
+                <div class="column">
+                    <span class="footer-col-title">Services</span>
+                    <ul>
+                        <li><a target="_blank">Coming Soon</a></li>
+                    </ul>
+                </div>
+                <!-- END OF COL -->
+                <div class="column">
                     <span class="footer-col-title">Connect</span>
                     <ul>
                         <li><a target="_blank">Coming Soon</a></li>
                     </ul>
                 </div>
-                    <!-- END OF COL -->
-                </div>
-                <!-- END OF BOTTOM -->
-                <div class="bottom-bar">
-                    <p>Copyright © 2019 Nature Maid</p>
-                </div>
+                <!-- END OF COL -->
             </div>
-            <!-- End of Footer Content -->
+            <!-- END OF BOTTOM -->
+            <div class="bottom-bar">
+                <p>Copyright © 2019 Nature Maid</p>
+            </div>
+        </div>
+        <!-- End of Footer Content -->
     </footer>
     <!-- End of Footer -->
 </body>
