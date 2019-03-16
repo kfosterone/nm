@@ -208,11 +208,11 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 .services-ul{
     float: left;
-    display: inline-block;
+    display: block;
     background-color: #6baa6f;
-    width: 12vw;
+    width: 20vw;
     padding-left: 50px;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-top: 30px;
     padding-bottom:40px;
     color: #003a3a;
@@ -223,11 +223,21 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 .services-ul h1{
     color: #003a3a;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: BrownStd, Helvetica, sans-serif, bold;
 
     
 }
 
+.services-ul li{
+    padding-top: 10px;
+}
+
+
+#services-hero {
+    opacity: 0.25;
+}
 
 
 #services-checklist{
