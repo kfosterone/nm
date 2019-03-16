@@ -76,25 +76,75 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     float: left;
 
 }
+/*Service Page Mobile Views*/
+
+@media screen and (max-width:600px) {
+    .services-ul {
+        width: 100%;
+    }
+
+    .tablinks {
+        width: 20%;
+        font-size: 10px;
+    }
+
+    .tabs-app button{
+        width: auto;
+        font-size: 18px;
+        float: center;
+        text-align: left;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .servicecontent ul, li{
+        width: 100%;
+        float: center;
+        padding: 0px;
+        margin-left: 50px;
+    }
+
+    .servicecontent h1{
+        width: 100%;
+        float: center;
+        margin-top: 10px;
+        margin-left: 50px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+
+
+}
+
+/*End Service Page Mobile Views*/
 
 
 /*Start Services Tabs CSS*/
 
+.servicecontent s {
+    opacity: 0.25;
+}
+
 .servicepage-hero {
     width: 100vw;
-    height: 30vw;
     min-height:300px;
     max-height: 500px;
-    position: relative
+    position: relative;
+    align-content: center;
 }
 
 .servicepage-hero h1{
-    margin-top: 100px;
     font-family: BrownStd, Helvetica, sans-serif;
     color: #003a3a;
     letter-spacing: 2px;
     font-size: 40px;
     text-align: center;
+    padding: 20px;
+    margin: auto;
+    position: relative;
 
 }
 
@@ -208,9 +258,9 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 .services-ul{
     float: left;
-    display: block;
+    display: inline-block;
     background-color: #6baa6f;
-    width: 20vw;
+    width: 20%;
     padding-left: 50px;
     padding-right: 10px;
     padding-top: 30px;
@@ -235,23 +285,23 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 }
 
 
-#services-hero {
-    opacity: 0.25;
+#services-hero{
+   opacity: 0.25;
 }
+
 
 
 #services-checklist{
      background-color: #6baa6f;
-     width: 2000px;
-     padding: 50px;
-     overflow: hidden:;
+     width: 100%;
+     overflow: hidden
 }
 
 
 
 
 .tab {
-    width: auto;
+    width: 100%;
     display: inline-block;
     padding: none;
     margin: none;
@@ -271,7 +321,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 .tabs-app {
     margin-left: none;
-    width: 2000px;
+    width: 100%;
     padding: none;
     overflow: hidden;
 
@@ -284,6 +334,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     overflow: hidden;
     outline: none;
     color: #9fa4a6;
+    margin: auto;
 
 }
 
