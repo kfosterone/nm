@@ -56,8 +56,9 @@
     </script>
     <!-- endinject -->
 </head>
+
 <body>
-<!--body onload="serviceTabSelected(event, 'standardContent')"-->
+    <!--body onload="serviceTabSelected(event, 'standardContent')"-->
     <header class="header clear">
         <div class="content">
             <div class="logo-wrapper">
@@ -86,12 +87,13 @@
     <!-- /header -->
     <div class="servicepage-hero">
         <div id="services-hero" class=" js-lazy hero-bk-holder" data-bgset="resources/images/checklist-hero.jpg" style="background-image:url(resources/images/checklist-hero.jpg);">
-        	<h1>House Cleaning Checklist</h1>
-            
+            <h1>House Cleaning Checklist</h1>
         </div>
-        
     </div>
-    <div class="checklist">
+    <div class="mobile-show">
+        <p>Can you see this test?</p>
+    </div>
+    <div class="checklist mobile-hide">
         <div id='services-checklist'>
             <div class="tabs-app">
                 <div class="tab">
@@ -99,9 +101,9 @@
                     <button id='standardButton' class="tablinks active" onclick="serviceTabSelected(event, 'standardContent')"> Standard </button>
                     <button class="tablinks" onclick="serviceTabSelected(event, 'deepContent')"> Deep </button>
                     <button class="tablinks" id='justfloors' onclick="serviceTabSelected(event, 'floorsContent')"> Just Floors </button>
-                </div>\   
+                </div>\
                 <div id="lightContent" class="servicecontent" hidden="yes">
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>All Areas</h1>
                         <li>All surfaces dusted & wiped</li>
                         <li>Cabinet fronts wiped</li>
@@ -119,7 +121,7 @@
                         <li><s>Upholstered furniture vacuumed</s></li>
                         <li><s>Window sills cleaned</s></li>
                     </ul>
-                     <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Sinks cleaned & sanitized</li>
                         <li>Toilet cleaned & sanitized</li>
@@ -128,7 +130,7 @@
                         <li><s>*Bathtubs, shower walls & glass doors cleaned</s></li>
                         <li><s>**Bathtub & shower grout deep scrubbed</s></li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Kitchen</h1>
                         <li>Sinks cleaned & sanitized</li>
                         <li>Appliance exteriors cleaned</li>
@@ -136,14 +138,14 @@
                         <li><s>Microwave interior cleaned</s></li>
                         <li><s>Backsplash washed</s></li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Beds made</li>
                         <li><s>*Sheets changed</s></li>
                     </ul>
                 </div>
                 <div id="standardContent" class="servicecontent">
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>All Rooms</h1>
                         <li>Standard Item</li>
                         <li>Light Item</li>
@@ -154,7 +156,7 @@
                         <li>Light Item</li>
                         <li>Standard</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -168,7 +170,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -182,7 +184,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -198,7 +200,7 @@
                     </ul>
                 </div>
                 <div id="deepContent" class="servicecontent" hidden="yes">
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>All Rooms</h1>
                         <li>Standard Item</li>
                         <li>Light Item</li>
@@ -209,7 +211,7 @@
                         <li>Light Item</li>
                         <li>Deep</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -223,7 +225,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -237,7 +239,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -253,7 +255,7 @@
                     </ul>
                 </div>
                 <div id="floorsContent" class="servicecontent" hidden="yes">
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>All Rooms</h1>
                         <li>Standard Item</li>
                         <li>Light Item</li>
@@ -264,7 +266,7 @@
                         <li>Light Item</li>
                         <li>Floors</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Kitchen</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -278,7 +280,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bathrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -292,7 +294,7 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                    <ul class ="services-ul">
+                    <ul class="services-ul">
                         <h1>Bedrooms</h1>
                         <li>Light Item</li>
                         <li>Light Item</li>
@@ -306,35 +308,34 @@
                         <li>Light Item</li>
                         <li>Light Item</li>
                     </ul>
-                </div>  
-            </div>
-        </div>
-     </div>
- </div>
-</div>
-
+                </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     <div id="footer">
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="bottom clear">
-                <div class="column large">
-                    <p id='nm-logo-small'>Nature Maid</p>
-                    <div class ="extra-meta">
-                        <a href="tel:17733575236" target="_blank" class ="grey"><span target="_blank">773-357-5236</span></a>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="bottom clear">
+                    <div class="column large">
+                        <p id='nm-logo-small'>Nature Maid</p>
+                        <div class="extra-meta">
+                            <a href="tel:17733575236" target="_blank" class="grey"><span target="_blank">773-357-5236</span></a>
+                        </div>
+                    </div> <!-- END OF COL -->
+                    <div class="column">
+                        <span class="footer-col-title">Company</span>
+                        <ul>
+                            <!--li><a href="/about-us" >About Us</a></li-->
+                            <li><a href="mailto:info@naturemaidclean.com" target="_blank">Contact Us</a></li>
+                        </ul>
                     </div>
-                </div> <!-- END OF COL -->
-                <div class="column">
-                    <span class="footer-col-title">Company</span>
-                    <ul>
-                        <!--li><a href="/about-us" >About Us</a></li-->
-                        <li><a href="mailto:info@naturemaidclean.com" target="_blank">Contact Us</a></li>
-                    </ul>
-                </div>
-                <!-- END OF COL -->
-                <!--div class="column">
+                    <!-- END OF COL -->
+                    <!--div class="column">
                         <span class="footer-col-title">Our Services</span>
                         <ul>
                             <li><a href="/home-cleaning">Home Cleaning</a></li>
@@ -342,32 +343,31 @@
                             <li><a href="/home-cleaning#checklist">Cleaning Checklist</a></li>
                         </ul>
                     </div-->
-                <!-- END OF COL -->
-                <!-- END OF COL -->
-                <div class="column">
-                    <span class="footer-col-title">Services</span>
-                    <ul>
-                        <li><a target="_blank">Coming Soon</a></li>
-                    </ul>
+                    <!-- END OF COL -->
+                    <!-- END OF COL -->
+                    <div class="column">
+                        <span class="footer-col-title">Services</span>
+                        <ul>
+                            <li><a target="_blank">Coming Soon</a></li>
+                        </ul>
+                    </div>
+                    <!-- END OF COL -->
+                    <div class="column">
+                        <span class="footer-col-title">Connect</span>
+                        <ul>
+                            <li><a target="_blank">Coming Soon</a></li>
+                        </ul>
+                    </div>
+                    <!-- END OF COL -->
                 </div>
-                <!-- END OF COL -->
-                <div class="column">
-                    <span class="footer-col-title">Connect</span>
-                    <ul>
-                        <li><a target="_blank">Coming Soon</a></li>
-                    </ul>
+                <!-- END OF BOTTOM -->
+                <div class="bottom-bar">
+                    <p>Copyright © 2019 Nature Maid</p>
                 </div>
-                <!-- END OF COL -->
             </div>
-            <!-- END OF BOTTOM -->
-            <div class="bottom-bar">
-                <p>Copyright © 2019 Nature Maid</p>
-            </div>
-        </div>
-        <!-- End of Footer Content -->
-    </footer>
-
-</div>
+            <!-- End of Footer Content -->
+        </footer>
+    </div>
     <!-- End of Footer -->
 </body>
 
