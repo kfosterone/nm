@@ -11,34 +11,34 @@
 /*Atheltas Font CSS*/
 
 @font-face {
-font-family: 'Athelas Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
+    font-family: 'Athelas Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
 }
 
 
 @font-face {
-font-family: 'Athelas Italic';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
+    font-family: 'Athelas Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
 }
 
 
 @font-face {
-font-family: 'Athelas Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
+    font-family: 'Athelas Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
 }
 
 
 @font-face {
-font-family: 'Athelas Bold Italic';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
+    font-family: 'Athelas Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
 }
 
 /*End Athletas Font CSS*/
@@ -46,7 +46,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 #nm-logo {
     font-family: 'Athelas-Bold';
     font-size: 50px;
-    color:#009999;
+    color: #009999;
     letter-spacing: 6px;
     margin-left: 20px;
     margin-bottom: none;
@@ -58,16 +58,16 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 #nm-logo-small {
     font-family: 'Athelas-Bold';
     font-size: 30px;
-    color:#009999;
+    color: #009999;
     letter-spacing: 6px;
 }
 
 .nm-logo {
     font-family: 'Athelas-Bold';
     font-size: 5vw;
-    color:#009999;
+    color: #009999;
     letter-spacing: 6px;
-    margin-top : 20px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: none;
     padding: none;
@@ -76,16 +76,22 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     float: left;
 
 }
+
+.mobile-show {
+    display: none;
+}
+
 /*Service Page Mobile Views*/
 
 @media screen and (max-width:600px) {
-    .mobile-hide{
+
+    .mobile-hide {
         display: none;
     }
 
-    .mobile-show{
+    .mobile-show {
         display: inline;
-    }
+    } 
 
 
     .services-ul {
@@ -97,7 +103,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
         font-size: 10px;
     }
 
-    .tabs-app button{
+    .tabs-app button {
         width: auto;
         font-size: 18px;
         float: center;
@@ -106,14 +112,15 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
         margin: 5px;
     }
 
-    .servicecontent ul, li{
+    .servicecontent ul,
+    li {
         width: 100%;
         float: center;
         padding: 0px;
         margin-left: 50px;
     }
 
-    .servicecontent h1{
+    .servicecontent h1 {
         width: 100%;
         float: center;
         margin-top: 10px;
@@ -133,10 +140,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 /*Start Services Tabs CSS*/
 
-.mobile-show{
-    display: none;
-    background-color: green;
-}
+
 
 .servicecontent s {
     opacity: 0.25;
@@ -144,13 +148,13 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 .servicepage-hero {
     width: 100vw;
-    min-height:300px;
+    min-height: 300px;
     max-height: 500px;
     position: relative;
     align-content: center;
 }
 
-.servicepage-hero h1{
+.servicepage-hero h1 {
     font-family: BrownStd, Helvetica, sans-serif;
     color: #003a3a;
     letter-spacing: 2px;
@@ -270,7 +274,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 }
 
 
-.services-ul{
+.services-ul {
     float: left;
     display: inline-block;
     background-color: #6baa6f;
@@ -278,37 +282,37 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     padding-left: 50px;
     padding-right: 10px;
     padding-top: 30px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
     color: #003a3a;
     font-size: 18px;
 
 }
 
-.services-ul h1{
+.services-ul h1 {
     color: #003a3a;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 3px;
     font-family: BrownStd, Helvetica, sans-serif, bold;
 
-    
+
 }
 
-.services-ul li{
+.services-ul li {
     padding-top: 10px;
 }
 
 
-#services-hero{
-   opacity: 0.25;
+#services-hero {
+    opacity: 0.25;
 }
 
 
 
-#services-checklist{
-     background-color: #6baa6f;
-     width: 100%;
-     overflow: hidden
+#services-checklist {
+    background-color: #6baa6f;
+    width: 100%;
+    overflow: hidden
 }
 
 
@@ -328,7 +332,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     padding-bottom: 70px;
     margin: none;
     text-align: left;
-    font-size:30px;
+    font-size: 30px;
 
 }
 
@@ -1973,7 +1977,7 @@ h1.white {
     .h1,
     h1 {
         font-size: 30px;
-        padding-bottom :none;
+        padding-bottom: none;
         margin-bottom: none;
     }
 }
@@ -2804,12 +2808,12 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
         margin-top: 13px;
     }
 
-    #login-button{
-        border-style:none;
+    #login-button {
+        border-style: none;
         padding: 0px;
     }
 
-  /* #login-button:hover {
+    /* #login-button:hover {
         border: none;
         padding: none;
         margin: none;
@@ -2834,12 +2838,12 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
         margin-top: 13px;
     }
 
-    #login-button{
-        border-style:none;
+    #login-button {
+        border-style: none;
         padding: 0px;
     }
 
-  /* #login-button:hover {
+    /* #login-button:hover {
         border: none;
         padding: none;
         margin: none;
@@ -2942,7 +2946,7 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a {
     transition: color 250ms 0s ease-in-out
 }
 
- #login-button{
+#login-button {
     padding: 10px;
     color: #009999;
     border: 1px;
@@ -3142,7 +3146,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     font-weight: 700;
     font-size: 16px;
     color: #009999;
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 20px;
     display: block
 }
