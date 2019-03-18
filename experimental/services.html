@@ -87,8 +87,230 @@
             <h1>House Cleaning Checklist</h1>
         </div>
     </div>
-    <div class="mobile-show">
+    <div class="checklist-mobile mobile-show">
         Can you see this test?
+        <div class='services-checklist-mobile'>
+            <div class="tabs-app">
+                <div class="tab-mobile">
+                    <button class="tablinks-mobile" onclick="serviceTabSelected(event, 'lightContent')"> Light </button>
+                    <button id='standardButton' class="tablinks-mobile active" onclick="serviceTabSelected(event, 'standardContent')"> Standard </button>
+                    <button class="tablinks-mobile" onclick="serviceTabSelected(event, 'deepContent')"> Deep </button>
+                    <button class="tablinks-mobile" id='justfloors' onclick="serviceTabSelected(event, 'floorsContent')"> Just Floors </button>
+                </div>\
+                <div id="lightContent" class="servicecontent-mobile" hidden="yes">
+                    <ul class="services-ul-mobile">
+                        <h1>All Areas</h1>
+                        <li>All surfaces dusted & wiped</li>
+                        <li>Cabinet fronts wiped</li>
+                        <li>Tables & counter tops cleaned</li>
+                        <li>Carpet & rugs vacuumed </li>
+                        <li>Hard floors swept & vacuumed</li>
+                        <li>Cushions & pillows fluffed</li>
+                        <li>Light organizing</li>
+                        <li>Mirrors cleaned</li>
+                        <li>Trash bins emptied</li>
+                        <li><s>Trash bin exteriors cleaned</s></li>
+                        <li><s>Baseboards wiped</s></li>
+                        <li><s>Hard floors mopped</s></li>
+                        <li><s>Ceiling fan blades wiped</s></li>
+                        <li><s>Upholstered furniture vacuumed</s></li>
+                        <li><s>Window sills cleaned</s></li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bathrooms</h1>
+                        <li>Sinks cleaned & sanitized</li>
+                        <li>Toilet cleaned & sanitized</li>
+                        <li>Mirrors cleaned</li>
+                        <li>Towels changed</li>
+                        <li><s>*Bathtubs, shower walls & glass doors cleaned</s></li>
+                        <li><s>**Bathtub & shower grout deep scrubbed</s></li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Kitchen</h1>
+                        <li>Sinks cleaned & sanitized</li>
+                        <li>Appliance exteriors cleaned</li>
+                        <li>Load & unload dishwasher</li>
+                        <li><s>Microwave interior cleaned</s></li>
+                        <li><s>Backsplash washed</s></li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bedrooms</h1>
+                        <li>Beds made</li>
+                        <li><s>*Sheets changed</s></li>
+                    </ul>
+                </div>
+                <div id="standardContent" class="servicecontent">
+                    <ul class="services-ul-mobile">
+                        <h1>All Rooms</h1>
+                        <li>Standard Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Standard</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Kitchen</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bathrooms</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bedrooms</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                </div>
+                <div id="deepContent" class="servicecontent-mobile" hidden="yes">
+                    <ul class="services-ul-mobile">
+                        <h1>All Rooms</h1>
+                        <li>Standard Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Deep</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Kitchen</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bathrooms</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bedrooms</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Deep</li>
+                    </ul>
+                </div>
+                <div id="floorsContent" class="servicecontent-mobile" hidden="yes">
+                    <ul class="services-ul-mobile">
+                        <h1>All Rooms</h1>
+                        <li>Standard Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Floors</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Kitchen</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bathrooms</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                    <ul class="services-ul-mobile">
+                        <h1>Bedrooms</h1>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                        <li>Light Item</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     <div class="checklist mobile-hide">
         <div id='services-checklist'>

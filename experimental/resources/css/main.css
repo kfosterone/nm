@@ -137,6 +137,15 @@
 
 /*End Service Page Mobile Views*/
 
+/*Start mobile Services CSS*/
+
+.checklist-mobile,.services-checklist-mobile{
+    background-color: #66cccc;
+    width: 100%;
+}
+
+/*End Mobile Services CSS*/
+
 
 /*Start Services Tabs CSS*/
 
