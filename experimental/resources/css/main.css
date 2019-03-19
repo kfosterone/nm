@@ -43,6 +43,34 @@
 
 /*End Athletas Font CSS*/
 
+.content-faq {
+    width: 60%;
+    float: center;
+    position: relative;
+    margin: auto;
+}
+
+.content-faq button{
+    background-color: transparent;
+}
+
+
+.faqpage-hero {
+    min-height: 300px;
+    text-align: center;
+}
+
+.hero-content {
+    widght: 100px;
+    margin: auto;
+    float: center;
+}
+
+
+
+
+
+
 
 .nm-logo {
     font-family: 'Athelas-Bold';
