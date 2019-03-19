@@ -11,90 +11,152 @@
 /*Atheltas Font CSS*/
 
 @font-face {
-font-family: 'Athelas Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
+    font-family: 'Athelas Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
 }
 
 
 @font-face {
-font-family: 'Athelas Italic';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
+    font-family: 'Athelas Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
 }
 
 
 @font-face {
-font-family: 'Athelas Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
+    font-family: 'Athelas Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
 }
 
 
 @font-face {
-font-family: 'Athelas Bold Italic';
-font-style: normal;
-font-weight: normal;
-src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
+    font-family: 'Athelas Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
 }
 
 /*End Athletas Font CSS*/
 
-#nm-logo {
-    font-family: 'Athelas-Bold';
-    font-size: 50px;
-    color:#009999;
-    letter-spacing: 6px;
-    margin-left: 20px;
-    margin-bottom: none;
-    padding: none;
-    line-height: auto;
-    border-style: none;
-}
-
-#nm-logo-small {
-    font-family: 'Athelas-Bold';
-    font-size: 30px;
-    color:#009999;
-    letter-spacing: 6px;
-}
 
 .nm-logo {
     font-family: 'Athelas-Bold';
-    font-size: 5vw;
-    color:#009999;
+    font-size: 40px;
+    color: #009999;
     letter-spacing: 6px;
-    margin-top : 20px;
-    margin-left: 20px;
+    margin-top: 10px;
     margin-right: none;
-    padding: none;
+    padding: 0px 0px 0px 0px;
     line-height: auto;
     border-style: none;
     float: left;
 
 }
 
+.mobile-show {
+    display: none;
+}
+
+
+
+/*Service Page Mobile Views*/
+
+@media screen and (max-width:600px) {
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .mobile-show {
+        display: inline;
+    } 
+
+    .servicepage-hero {
+        min-height: 150px;
+        max-height: 200px;
+        height: 150px;
+    }
+
+
+    .services-ul {
+        width: 100%;
+    }
+
+    .tablinks {
+        width: 20%;
+        font-size: 10px;
+    }
+
+
+
+    .servicecontent ul,
+    li {
+        width: 100%;
+        float: center;
+        padding: 0px;
+        margin-left: 50px;
+    }
+
+    .servicecontent h1 {
+        width: 100%;
+        float: center;
+        margin-top: 10px;
+        margin-left: 50px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+
+
+}
+
+/*End Service Page Mobile Views*/
+
+/*Start mobile Services CSS*/
+
+
+/*End Mobile Services CSS*/
+
 
 /*Start Services Tabs CSS*/
 
-.servicepage-hero {
-    width: 100vw;
-    height: 30vw;
-    min-height:300px;
-    max-height: 500px;
-    position: relative
+#cleaning-checklist {
+    background-color: #66cccc;
+    padding:0px 0px 0px 2%;
 }
 
-.servicepage-hero h1{
-    margin-top: 100px;
+
+
+
+.servicecontent s {
+    opacity: 0.25;
+}
+
+.servicepage-hero {
+    width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    position: relative;
+    align-content: center;
+}
+
+
+.servicepage-hero h1 {
     font-family: BrownStd, Helvetica, sans-serif;
     color: #003a3a;
     letter-spacing: 2px;
     font-size: 40px;
     text-align: center;
+    padding: 20px;
+    margin: auto;
+    position: relative;
 
 }
 
@@ -179,8 +241,7 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
 
 @media screen and (max-width:639px) {
     .servicepage-hero {
-        min-height: 500px;
-        height: 80vh
+        min-height: 300px;
     }
 
     .servicepage-hero .hero-bk-holder {
@@ -205,46 +266,71 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     }
 }
 
+.tabs-app-mobile s {
+    opacity: 0.25;
+}
 
-.services-ul{
+.tabs-app-mobile{
+    margin: 0px 0px 0px 5%;
+    padding: 0px 0px 30px 0px;
+}
+
+.tabs-app-mobile ul {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.services-ul {
     float: left;
     display: inline-block;
-    background-color: #6baa6f;
-    width: 12vw;
+    width: 20%;
     padding-left: 50px;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-top: 30px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
     color: #003a3a;
     font-size: 18px;
+    background-color: inherit;
 
 }
 
-.services-ul h1{
+.services-ul h1 {
     color: #003a3a;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: BrownStd, Helvetica, sans-serif, bold;
 
-    
+
+}
+
+.services-ul li {
+    padding-top: 10px;
+}
+
+
+#services-hero {
+    opacity: 0.25;
 }
 
 
 
-#services-checklist{
-     background-color: #6baa6f;
-     width: 2000px;
-     padding: 50px;
-     overflow: hidden:;
+#services-checklist {
+    background-color: inherit;
+    width: 100%;
+    overflow: hidden
 }
 
 
 
 
-.tab {
-    width: auto;
+.tab, .tab-mobile {
+    width: 100%;
     display: inline-block;
     padding: none;
     margin: none;
+    background-color: in
 }
 
 .tablinks {
@@ -254,18 +340,36 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     padding-bottom: 70px;
     margin: none;
     text-align: left;
-    font-size:30px;
+    font-size: 30px;
 
 }
+
+.tablinks-mobile {
+    width: auto;
+    float: left;
+    padding: 0px;
+    margin: 0px 25px 0px 0px;
+    text-align: left;
+    font-size: 16px;
+    background-color: inherit;
+
+}
+
+
+
 
 
 .tabs-app {
     margin-left: none;
-    width: 2000px;
+    width: 100%;
     padding: none;
     overflow: hidden;
+    background-color: inherit;
 
 }
+
+
+
 
 .tabs-app button {
     background-color: Transparent;
@@ -273,27 +377,45 @@ src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff')
     border: none;
     overflow: hidden;
     outline: none;
-    color: #9fa4a6;
+    color: #14374c;
+    opacity: 0.25;
+
+
+}
+
+.tabs-app-mobile button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    color: #14374c;
+    opacity: 0.25;
 
 }
 
 
-.tabs-app button.active {
+
+
+.tabs-app button.active, .tabs-app-mobile button.active {
     color: #fff;
     background-color: transparent;
+    opacity: 1.0;
 }
 
-.tabs-app button.focus {
+.tabs-app button.focus, .tabs-app-mobile button.focus {
     color: #fff;
     background-color: transparent;
     border: none;
+    opacity: 1.0;
 }
 
-.tabs-app button:hover {
+.tabs-app button:hover, .tabs-app-mobile button:hover {
     border: none;
     border-image: none;
     box-shadow: none;
     background-color: Transparent;
+    opacity: 1.0;
 }
 
 /*End Services Tabs CSS*/
@@ -1622,9 +1744,9 @@ h6 {
     font-size: 12px
 }
 
-p {
+/*p {
     margin: 0 auto 8px
-}
+}*/
 
 ul {
     padding: 0;
@@ -1898,7 +2020,7 @@ h1.white {
     .h1,
     h1 {
         font-size: 30px;
-        padding-bottom :none;
+        padding-bottom: none;
         margin-bottom: none;
     }
 }
@@ -2611,9 +2733,9 @@ header.header.mm-open .main-nav {
 
 
 header.header.logo-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    float: none
+    margin: 0px;
+    padding: 0px;
+    float: none;
 }
 
 header.header.logo-wrapper>a {
@@ -2621,25 +2743,24 @@ header.header.logo-wrapper>a {
 }
 
 header.header .content {
-    margin-left: 5.16666667%;
-    margin-right: 5.16666667%;
-    margin-top: 60px;
-    height: 60px
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 20px
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
     header.header .content {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 25px;
+        margin-right: 25px;
         margin-top: 20px
     }
 }
 
 @media screen and (max-width:939px) and (min-width:640px) {
     header.header .content {
-        margin-left: 8.16666667%;
-        margin-right: 8.16666667%;
-        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 20px
         height: 50px
     }
 }
@@ -2729,12 +2850,12 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
         margin-top: 13px;
     }
 
-    #login-button{
-        border-style:none;
+    #login-button {
+        border-style: none;
         padding: 0px;
     }
 
-  /* #login-button:hover {
+    /* #login-button:hover {
         border: none;
         padding: none;
         margin: none;
@@ -2744,11 +2865,16 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
 
     .nm-logo {
 
-        font-size: 20px;
+        font-size: 30px;
         letter-spacing: none;
+        margin-top: 0px;
         margin-left: 5px;
         margin-right: none;
 
+    }
+
+    .servicepage-hero h1{
+        font-size: 30px;
     }
 }
 
@@ -2759,12 +2885,12 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
         margin-top: 13px;
     }
 
-    #login-button{
-        border-style:none;
+    #login-button {
+        border-style: none;
         padding: 0px;
     }
 
-  /* #login-button:hover {
+    /* #login-button:hover {
         border: none;
         padding: none;
         margin: none;
@@ -2867,7 +2993,8 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a {
     transition: color 250ms 0s ease-in-out
 }
 
- #login-button{
+#login-button {
+    margin-top: 100px;
     padding: 10px;
     color: #009999;
     border: 1px;
@@ -3067,7 +3194,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     font-weight: 700;
     font-size: 16px;
     color: #009999;
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 20px;
     display: block
 }

@@ -43,34 +43,15 @@
 
 /*End Athletas Font CSS*/
 
-#nm-logo {
-    font-family: 'Athelas-Bold';
-    font-size: 50px;
-    color: #009999;
-    letter-spacing: 6px;
-    margin-left: 20px;
-    margin-bottom: none;
-    padding: none;
-    line-height: auto;
-    border-style: none;
-}
-
-#nm-logo-small {
-    font-family: 'Athelas-Bold';
-    font-size: 30px;
-    color: #009999;
-    letter-spacing: 6px;
-}
 
 .nm-logo {
     font-family: 'Athelas-Bold';
-    font-size: 5vw;
+    font-size: 40px;
     color: #009999;
     letter-spacing: 6px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
     margin-right: none;
-    padding: none;
+    padding: 0px 0px 0px 0px;
     line-height: auto;
     border-style: none;
     float: left;
@@ -80,6 +61,8 @@
 .mobile-show {
     display: none;
 }
+
+
 
 /*Service Page Mobile Views*/
 
@@ -93,6 +76,12 @@
         display: inline;
     } 
 
+    .servicepage-hero {
+        min-height: 150px;
+        max-height: 200px;
+        height: 150px;
+    }
+
 
     .services-ul {
         width: 100%;
@@ -103,14 +92,7 @@
         font-size: 10px;
     }
 
-    .tabs-app button {
-        width: auto;
-        font-size: 18px;
-        float: center;
-        text-align: left;
-        padding: 10px;
-        margin: 5px;
-    }
+
 
     .servicecontent ul,
     li {
@@ -139,15 +121,17 @@
 
 /*Start mobile Services CSS*/
 
-.checklist-mobile,.services-checklist-mobile{
-    background-color: #66cccc;
-    width: 100%;
-}
 
 /*End Mobile Services CSS*/
 
 
 /*Start Services Tabs CSS*/
+
+#cleaning-checklist {
+    background-color: #66cccc;
+    padding:0px 0px 0px 2%;
+}
+
 
 
 
@@ -156,12 +140,13 @@
 }
 
 .servicepage-hero {
-    width: 100vw;
+    width: 100%;
     min-height: 300px;
     max-height: 500px;
     position: relative;
     align-content: center;
 }
+
 
 .servicepage-hero h1 {
     font-family: BrownStd, Helvetica, sans-serif;
@@ -256,8 +241,7 @@
 
 @media screen and (max-width:639px) {
     .servicepage-hero {
-        min-height: 500px;
-        height: 80vh
+        min-height: 300px;
     }
 
     .servicepage-hero .hero-bk-holder {
@@ -282,11 +266,24 @@
     }
 }
 
+.tabs-app-mobile s {
+    opacity: 0.25;
+}
+
+.tabs-app-mobile{
+    margin: 0px 0px 0px 5%;
+    padding: 0px 0px 30px 0px;
+}
+
+.tabs-app-mobile ul {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
 
 .services-ul {
     float: left;
     display: inline-block;
-    background-color: #6baa6f;
     width: 20%;
     padding-left: 50px;
     padding-right: 10px;
@@ -294,6 +291,7 @@
     padding-bottom: 40px;
     color: #003a3a;
     font-size: 18px;
+    background-color: inherit;
 
 }
 
@@ -319,7 +317,7 @@
 
 
 #services-checklist {
-    background-color: #6baa6f;
+    background-color: inherit;
     width: 100%;
     overflow: hidden
 }
@@ -327,11 +325,12 @@
 
 
 
-.tab {
+.tab, .tab-mobile {
     width: 100%;
     display: inline-block;
     padding: none;
     margin: none;
+    background-color: in
 }
 
 .tablinks {
@@ -345,14 +344,32 @@
 
 }
 
+.tablinks-mobile {
+    width: auto;
+    float: left;
+    padding: 0px;
+    margin: 0px 25px 0px 0px;
+    text-align: left;
+    font-size: 16px;
+    background-color: inherit;
+
+}
+
+
+
+
 
 .tabs-app {
     margin-left: none;
     width: 100%;
     padding: none;
     overflow: hidden;
+    background-color: inherit;
 
 }
+
+
+
 
 .tabs-app button {
     background-color: Transparent;
@@ -360,28 +377,45 @@
     border: none;
     overflow: hidden;
     outline: none;
-    color: #9fa4a6;
-    margin: auto;
+    color: #14374c;
+    opacity: 0.25;
+
+
+}
+
+.tabs-app-mobile button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    color: #14374c;
+    opacity: 0.25;
 
 }
 
 
-.tabs-app button.active {
+
+
+.tabs-app button.active, .tabs-app-mobile button.active {
     color: #fff;
     background-color: transparent;
+    opacity: 1.0;
 }
 
-.tabs-app button.focus {
+.tabs-app button.focus, .tabs-app-mobile button.focus {
     color: #fff;
     background-color: transparent;
     border: none;
+    opacity: 1.0;
 }
 
-.tabs-app button:hover {
+.tabs-app button:hover, .tabs-app-mobile button:hover {
     border: none;
     border-image: none;
     box-shadow: none;
     background-color: Transparent;
+    opacity: 1.0;
 }
 
 /*End Services Tabs CSS*/
@@ -1710,9 +1744,9 @@ h6 {
     font-size: 12px
 }
 
-p {
+/*p {
     margin: 0 auto 8px
-}
+}*/
 
 ul {
     padding: 0;
@@ -2699,9 +2733,9 @@ header.header.mm-open .main-nav {
 
 
 header.header.logo-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    float: none
+    margin: 0px;
+    padding: 0px;
+    float: none;
 }
 
 header.header.logo-wrapper>a {
@@ -2709,25 +2743,24 @@ header.header.logo-wrapper>a {
 }
 
 header.header .content {
-    margin-left: 5.16666667%;
-    margin-right: 5.16666667%;
-    margin-top: 60px;
-    height: 60px
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 20px
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
     header.header .content {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 25px;
+        margin-right: 25px;
         margin-top: 20px
     }
 }
 
 @media screen and (max-width:939px) and (min-width:640px) {
     header.header .content {
-        margin-left: 8.16666667%;
-        margin-right: 8.16666667%;
-        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 20px
         height: 50px
     }
 }
@@ -2832,11 +2865,16 @@ header.header .logo-wrapper .extra-meta>span:not(:first-child):before {
 
     .nm-logo {
 
-        font-size: 20px;
+        font-size: 30px;
         letter-spacing: none;
+        margin-top: 0px;
         margin-left: 5px;
         margin-right: none;
 
+    }
+
+    .servicepage-hero h1{
+        font-size: 30px;
     }
 }
 
@@ -2956,6 +2994,7 @@ header.header .main-nav ul:not(.mobile-bottom-nav) li.nav-item a {
 }
 
 #login-button {
+    margin-top: 100px;
     padding: 10px;
     color: #009999;
     border: 1px;
