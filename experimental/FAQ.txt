@@ -12,10 +12,10 @@ How do I pay for my cleaning?
 When you fill out our booking form, you are required to leave a credit card on file. We will put a hold on this card for the amount of your cleaning cost, and charge this card after the cleaning is completed.
 
 Is my credit card info safe?
-Yes, your credit card info is safe. Your credit card information is encrypted and stored with Stripe (https://stripe.com/), our payment processing vendor. At all times, the only card info we can see is the last 4 digits of the card and expiration date. Additionally, our website uses SSL encryption to prevent your data from going anywhere unexepected. At Nature Maid, we take digital security very seriously and have taken steps to ensure all of your data is secure. 
+Yes, your credit card info is safe. Your credit card information is encrypted and stored with Stripe (https://stripe.com/), our payment processing vendor. At all times, the only card info we can see is the last 4 digits of the card and expiration date. Additionally, our website uses SSL encryption to prevent your data from going anywhere unexpected. At Nature Maid, we take digital security very seriously and have taken steps to ensure all of your data is secure. 
 
 How do I leave a tip?
-Had a good cleaning and want to say 'Thank you!' to your cleaning technicians? You can leave a cash tip in person, or send us an email and we will add a tip to the card on file a pay %100 of it to the cleaning technicians.
+Had a good cleaning and want to say 'Thank you!' to your cleaning technicians? You can leave a cash tip in person, or send us an email and we will add a tip to the card on file We pay %100 of all tips to the cleaning technicians.
 
 Do I need to provide parking?
 It is expected that your home have a free parking space to accodate the cleaning technicians. If there is no available free parking, we will pay for parking, but the cost is added on to your bill. We do our best to find the cheapest paid parking available. 
@@ -25,12 +25,12 @@ Do I need to provide any cleaning supplies?
 Nope! Nature maid will bring all equipment and supplies required for your cleaning. We will use your equipment or supplies if requested.
 
 What cleaning products do you use?
-We use a variety of cleaning solutions that are safe for the surfaces in your home. All products are verified to be safe for pets and people using the Environmental Working Groups' database (https://www.ewg.org/). If there's a special product you'd like us to use, let us know, and we'll do our best to accomodate.
+We use a variety of cleaning solutions that are safe for the surfaces in your home. All products are verified to be safe for pets and people using the Environmental Working Groups' database (https://www.ewg.org/). If there's a special product you'd like us to use, let us know, and we'll do our best to accommodate.
 
 How do I change or cancel an appointment?
 If you create an account on our login page, you can easily manage your appointments. https//naturemaidclean.com/login
 
-Otherwise, send an email to support@naturemaidclean.com and we'll make the cancelation for you. 
+Otherwise, send an email to support@naturemaidclean.com and we'll make the change for you. 
 
 Please note, that any same day cancelations will be charged a $50 cancellation fee. Any forgotten appointments that prevent our cleaning techs from accessing the unit to clean will also result in a cancellation fee. 
 
