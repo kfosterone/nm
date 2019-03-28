@@ -75,7 +75,7 @@
     float: center;
     position: relative;
     margin: auto;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 
 }
 
@@ -137,8 +137,6 @@ button.accordion {
 
     div.panel {
         padding: 0 18px;
-        margin-bottom: 20px;
-        margin-left: 20px;
         display: none;
         background-color: white;
     }
@@ -251,15 +249,6 @@ button.accordion {
     line-height: auto;
     border-style: none;
     float: left;
-
-}
-
-.nm-logo-small {
-    margin: 0px;
-    font-family: 'Athelas-Bold';
-    font-size: 30px;
-    color: #66cccc;
-    letter-spacing: 3px;
 
 }
 
@@ -700,7 +689,6 @@ select {
 #button-bottom-mob {
     height: 50px;
     border-radius: 3px;
-    color: black;
 }
 
 #button-top-mob {
@@ -2908,9 +2896,9 @@ form label a {
 
 
 header.header {
-    position: absolute;
+    position: relative;
     width: 100%;
-    z-index: 9000;
+    z-index: 9000
 }
 
 header.header.mm-open {
@@ -3388,8 +3376,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom .column.large {
-    width: 48.95833333%;
-    display: inline-block;
+    width: 48.95833333%
 }
 
 .footer .footer-content .bottom .column:last-child {
@@ -3411,8 +3398,6 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     margin-bottom: 10px
 }
 
-
-
 .footer .footer-content .bottom .column ul li a {
     font-family: BrownStd, Helvetica, sans-serif;
     font-size: 14px;
@@ -3421,8 +3406,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     -moz-transition: color 250ms 0s ease;
     -ms-transition: color 250ms 0s ease;
     -o-transition: color 250ms 0s ease;
-    transition: color 250ms 0s ease;
-    display: inline-block;
+    transition: color 250ms 0s ease
 }
 
 .footer .footer-content .bottom .column ul li a:hover {
@@ -3597,8 +3581,8 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
 .homepage-hero {
     width: 100vw;
-    height: 60vh;
-    min-height: 500px;
+    min-height: 700px;
+    height: 90vh;
     max-height: 800px;
     position: relative
 }
