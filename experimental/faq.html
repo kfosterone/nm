@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FAQs | Nature Maid Clean Cleaning Services</title>
+    <title>FAQs | Nature Maid Green Cleaning Services</title>
     <meta name="description" content="We provide professional janitorial services for commercial spaces. Office cleaning customized to your needs. Same cleaner every time. Learn more now!">
     <meta property="og:title" content="FAQs | Nature Maid Clean Cleaning Services">
     <meta property="og:description" content="We provide professional janitorial services for commercial spaces. Office cleaning customized to your needs. Same cleaner every time. Learn more now!">
@@ -37,16 +37,23 @@
     <link rel="stylesheet" href="resources/css/main.css">
     <!-- endinject -->
     <!--inject:js-->
-    <script src="accordian.js">
-    </script>
     <script>
-    dataLayer = [{
-        'pageCategory': 'FAQ Page',
-    }];
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+
     </script>
-    <style>
-    
-    </style>
 </head>
 
 <body>
@@ -68,98 +75,66 @@
     </header>
     <!-- <div class="main-content"> -->
     <div class="faqpage-hero">
-      <div class="hero-content">
-            <h1>Questions? Look here.</h1>
-            <h3>Can't find an answer? Email info@naturemaidclean.com</h3>
-      </div>
-        
+        <div class="hero-content">
+            <h1 class="faqh1">Questions? Look here.</h1>
+            <h3 class="faqh3">Can't find an answer? Email info@naturemaidclean.com</h3>
+        </div>
     </div>
     <div class="content-faq clear">
-        <div calss="faq-app">
-        <button class="accordion">How do I make an appointment? >></button>
-        <div class="panel">
-            <p>To make an appointment, simply fill out our booking form at <a href="https://naturemaidclean.com/booknow" target="_blank">https://naturemaidclean.com/booknow</a>. Once your booking is received, we will assign a cleaning team, and send you a confirmation email.
-                <br><br>
-            If you need additional support making an appointment, please call us at <a href="tel:17733575236" target="_blank">773-357-5236</a></p>
+        <div class="faq-app">
+            <button class="accordion">How do I make an appointment? >></button>
+            <div class="panel">
+                <p>To make an appointment, simply fill out our booking form at <a href="https://naturemaidclean.com/booknow" target="_blank">https://naturemaidclean.com/booknow</a>. Once your booking is received, we will assign a cleaning team, and send you a confirmation email.
+                    <br><br>
+                    If you need additional support making an appointment, please call us at <a href="tel:17733575236" target="_blank">773-357-5236</a></p>
+            </div>
+            <button class="accordion">What if I don't see the time I want in the booking form? >></button>
+            <div class="panel">
+                <p>Give us a call if you don't see the time you need, and we'll do our best to get your the appointment time you need.</p>
+            </div>
+            <button class="accordion">How do I pay for my cleaning? >></button>
+            <div class="panel">
+                <p>When you fill out our booking form, you are required to leave a credit card on file. We will put a hold on this card for the amount of your cleaning cost, and charge this card after the cleaning is completed.</p>
+            </div>
+            <button class="accordion">Is my credit card info safe? >></button>
+            <div class="panel">
+                <p>Yes, your credit card info is safe. Your credit card information is encrypted and stored with Stripe (https://stripe.com/), our payment processing vendor. At all times, the only card info we can see is the last 4 digits of the card and expiration date.
+                    <br><br>
+                    Additionally, our website uses SSL encryption to prevent your data from going anywhere unexpected. At Nature Maid, we take digital security very seriously and have taken steps to ensure all of your data is secure. </p>
+            </div>
+            <button class="accordion">How do I leave a tip? >></button>
+            <div class="panel">
+                <p>Had a good cleaning and want to say 'Thank you!' to your cleaning technicians?
+                    <br><br>
+                    You can leave a cash tip in person, or send us an email and we will add a tip to the card on file We pay %100 of all tips to the cleaning technicians.</p>
+            </div>
+            <button class="accordion">Do I need to provide parking? >></button>
+            <div class="panel">
+                <p>It is expected that your home have a free parking space to accodate the cleaning technicians. If there is no available free parking, we will pay for parking, but the cost is added on to your bill. We do our best to find the cheapest paid parking available. </p>
+            </div>
+            <button class="accordion">Do I need to provide any cleaning supplies? >></button>
+            <div class="panel">
+                <p>Nope! Our cleaning technicians will bring all equipment and supplies required for your cleaning.</p>
+            </div>
+            <button class="accordion">What cleaning products do you use? >></button>
+            <div class="panel">
+                <p>We use a variety of cleaning solutions that are safe for the surfaces in your home. All products are verified to be safe for pets and people using the Environmental Working Groups' database (<a href="https://www.ewg.org/" target="_blank">https://www.ewg.org</a>).
+                    <br><br>
+                    If there's a special product you'd like us to use, let us know, and we'll do our best to accommodate.</p>
+            </div>
+            <button class="accordion">How do I change or cancel an appointment? >></button>
+            <div class="panel">
+                <p>
+                    If you create an account on our login page, you can easily manage your appointments.
+                    <br><br>
+                    <a href="https//naturemaidclean.com/login" target="_blank">https//naturemaidclean.com/login</a>
+                    <br><br>
+                    Otherwise, send an email to support@naturemaidclean.com and we'll make the change for you.
+                    <br><br>
+                    Please note, that any same day cancelations will be charged a $50 cancellation fee. Any forgotten appointments that prevent our cleaning techs from accessing the unit to clean will also result in a cancellation fee.
+                </p>
+            </div>
         </div>
-        <button class="accordion">What if I don't see the time I want in the booking form? >></button>
-        <div class="panel">
-            <p>Give us a call if you don't see the time you need, and we'll do our best to get your the appointment time you need.</p>
-        </div>
-        <button class="accordion">How do I pay for my cleaning? >></button>
-        <div class="panel">
-            <p>When you fill out our booking form, you are required to leave a credit card on file. We will put a hold on this card for the amount of your cleaning cost, and charge this card after the cleaning is completed.</p>
-        </div>
-         <button class="accordion">Is my credit card info safe? >></button>
-        <div class="panel">
-            <p>Yes, your credit card info is safe. Your credit card information is encrypted and stored with Stripe (https://stripe.com/), our payment processing vendor. At all times, the only card info we can see is the last 4 digits of the card and expiration date. 
-                <br><br>
-            Additionally, our website uses SSL encryption to prevent your data from going anywhere unexpected. At Nature Maid, we take digital security very seriously and have taken steps to ensure all of your data is secure. </p>
-        </div>
-         <button class="accordion">How do I leave a tip? >></button>
-        <div class="panel">
-            <p>Had a good cleaning and want to say 'Thank you!' to your cleaning technicians? 
-                <br><br>
-            You can leave a cash tip in person, or send us an email and we will add a tip to the card on file We pay %100 of all tips to the cleaning technicians.</p>
-        </div>
-         <button class="accordion">Do I need to provide parking? >></button>
-        <div class="panel">
-            <p>It is expected that your home have a free parking space to accodate the cleaning technicians. If there is no available free parking, we will pay for parking, but the cost is added on to your bill. We do our best to find the cheapest paid parking available. </p>
-        </div>
-        <button class="accordion">Do I need to provide any cleaning supplies? >></button>
-        <div class="panel">
-            <p>Nope! Our cleaning technicians will bring all equipment and supplies required for your cleaning.</p>
-        </div>
-        <button class="accordion">What cleaning products do you use? >></button>
-        <div class="panel">
-            <p>We use a variety of cleaning solutions that are safe for the surfaces in your home. All products are verified to be safe for pets and people using the Environmental Working Groups' database (<a href="https://www.ewg.org/" target="_blank">https://www.ewg.org</a>). 
-                <br><br>
-            If there's a special product you'd like us to use, let us know, and we'll do our best to accommodate.</p>
-        </div>
-        <button class="accordion">How do I change or cancel an appointment? >></button>
-        <div class="panel">
-            <p>
-            If you create an account on our login page, you can easily manage your appointments. 
-            <br><br>
-            <a href="https//naturemaidclean.com/login" target="_blank">https//naturemaidclean.com/login</a>
-             <br><br>
-            Otherwise, send an email to support@naturemaidclean.com and we'll make the change for you.
-            <br><br>
-            Please note, that any same day cancelations will be charged a $50 cancellation fee. Any forgotten appointments that prevent our cleaning techs from accessing the unit to clean will also result in a cancellation fee. 
-            </p>
-            <a class="showless" href="#">Show less</a>
-
-        </div>
-        </div>
-
-        <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        var pan =  document.getElementsByClassName("panel");
-        var showless = document.getElementsByClassName("showless");
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].onclick = function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            }
-        }
-
-        for (i =0; i < showless.length; i++) {
-            showless[i].onclick = function() {
-             if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-    }
-}
-        </script>
     </div>
     <footer class="footer">
         <div class="footer-content">
@@ -169,11 +144,11 @@
                     <div class="extra-meta">
                         <a href="tel:17733575236" target="_blank" class="grey"><span>773-357-5236</span></a>
                     </div>
-                </div> <!-- END OF COL -->
+                </div> 
+                <!-- END OF COL -->
                 <div class="column">
                     <span class="footer-col-title">Company</span>
                     <ul>
-                        <!--li><a href="/about-us" >About Us</a></li-->
                         <li><a href="mailto:info@naturemaidclean.com" target="_blank">Contact Us</a></li>
                     </ul>
                 </div>
@@ -202,8 +177,8 @@
                     </ul>
                 </div>
                 <!-- END OF COL -->
-            </div>
             <!-- END OF BOTTOM -->
+            </div>
             <div class="bottom-bar">
                 <p>Copyright © 2019 Nature Maid</p>
             </div>
