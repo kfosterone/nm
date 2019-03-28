@@ -58,6 +58,20 @@
 
 }
 
+.nm-logo-small {
+    font-family: 'Athelas-Bold';
+    font-size: 30px;
+    color: #66cccc;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-right: none;
+    padding: 0px 0px 0px 0px;
+    line-height: auto;
+    border-style: none;
+    float: left;
+
+}
+
 .mobile-show {
     display: none;
 }

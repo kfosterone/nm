@@ -75,6 +75,8 @@
     float: center;
     position: relative;
     margin: auto;
+    padding-bottom:10px;
+
 }
 
 .content-faq button{
@@ -247,6 +249,15 @@ button.accordion {
     line-height: auto;
     border-style: none;
     float: left;
+
+}
+
+.nm-logo-small {
+    margin: 0px;
+    font-family: 'Athelas-Bold';
+    font-size: 30px;
+    color: #66cccc;
+    letter-spacing: 3px;
 
 }
 
@@ -687,6 +698,7 @@ select {
 #button-bottom-mob {
     height: 50px;
     border-radius: 3px;
+    color: black;
 }
 
 #button-top-mob {
@@ -2894,9 +2906,9 @@ form label a {
 
 
 header.header {
-    position: relative;
+    position: absolute;
     width: 100%;
-    z-index: 9000
+    z-index: 9000;
 }
 
 header.header.mm-open {
@@ -3374,7 +3386,8 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom .column.large {
-    width: 48.95833333%
+    width: 48.95833333%;
+    display: inline-block;
 }
 
 .footer .footer-content .bottom .column:last-child {
@@ -3396,6 +3409,8 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     margin-bottom: 10px
 }
 
+
+
 .footer .footer-content .bottom .column ul li a {
     font-family: BrownStd, Helvetica, sans-serif;
     font-size: 14px;
@@ -3404,7 +3419,8 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     -moz-transition: color 250ms 0s ease;
     -ms-transition: color 250ms 0s ease;
     -o-transition: color 250ms 0s ease;
-    transition: color 250ms 0s ease
+    transition: color 250ms 0s ease;
+    display: inline-block;
 }
 
 .footer .footer-content .bottom .column ul li a:hover {
@@ -3579,8 +3595,8 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
 .homepage-hero {
     width: 100vw;
-    min-height: 700px;
-    height: 90vh;
+    height: 60vh;
+    min-height: 500px;
     max-height: 800px;
     position: relative
 }
