@@ -2,25 +2,18 @@
 <html class="no-js" lang="">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126620062-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-126620062-1');
-</script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Book Your Cleaning - Nature Maid Green House Cleaning Services</title>
-   <meta name="keywords" content="best maids, maid service chicago, cleaning service, house cleaning, commercial cleaning, spring cleaning, chicago house cleaning, commercial cleaning services chicago, house cleaning services chicago" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="best maids, maid service chicago, cleaning service, house cleaning, commercial cleaning, spring cleaning, chicago house cleaning, commercial cleaning services chicago, house cleaning services chicago">
     <meta name="description" content="Chicago & Los Angeles' #1 green cleaning maid service. Natural, non-toxic and excellent. Book online in 60 Seconds!">
     <meta property="og:title" content="Green Cleaning Services in Chicago & Los Angeles - Green Maid Service | Nature Maid">
     <meta property="og:description" content="Chicago & Los Angeles #1 green cleaning maid service. Natural, non-toxic and excellent. Book online in 60 Seconds!">
     <meta property="og:image" content=" resources/images/Nature Maid Clean-social.png ">
-    <meta property="og:url" content="/nmc">
+    <meta property="og:url" content="/booknow">
     <meta name="twitter:title" content="Chicago & Los Angeles Best Green Cleaning Service - Maid Service | Nature Maid">
     <meta name="twitter:description" content="Chicago & Los Angeles #1 green cleaning maid service. Natural, non-toxic and excellent. Book online in 60 Seconds!">
     <meta name="twitter:image" content=" ">
@@ -82,6 +75,35 @@
                 <div class="booking-header clear">
                     
                     <script src="https://naturemaidclean.launch27.com/jsbundle"></script>
+                    <script>
+    function serviceTabSelected(evt, serviceName) {
+        var i, servicecontent, tablinks;
+        servicecontent = document.getElementsByClassName("servicecontent");
+        for (i = 0; i < servicecontent.length; i++) {
+            servicecontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(serviceName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    function serviceTabSelectedpanel(evt, serviceName) {
+        var i, servicecontent, tablinks;
+        servicecontent = document.getElementsByClassName("servicecontent-panel");
+        for (i = 0; i < servicecontent.length; i++) {
+            servicecontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks-panel");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(serviceName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
                     <iframe id="booking-widget-iframe" src="https://naturemaidclean.launch27.com/?w_cleaning" scrolling="yes" style="border:none;width:100%;min-height:2739px;overflow:hidden;padding-top:140px;padding-bottom: 20px" scrolling="yes"></iframe>
                 </div>
             </div>
@@ -93,10 +115,13 @@
         <div class="footer-content">
             <div class="bottom clear">
                 <div class="column large">
-                    <p id='nm-logo-small'>Nature Maid</p>
-                    <div class ="extra-meta">
-                        <a href="tel:17733575236" target="_blank" class ="grey"><span target="_blank">773-357-5236</span></a>
-                    </div>
+                    <ul>
+                        <li><p class='nm-logo-small'>Nature Maid</p></li>
+                        <li><div class ="extra-meta">
+                            <a href="tel:17733575236" target="_blank" class ="grey"><span target="_blank">773-357-5236</span></a>
+                            </div>
+                        </li>
+                    </ul>
                 </div> <!-- END OF COL -->
                 <div class="column">
                     <span class="footer-col-title">Company</span>
@@ -119,7 +144,10 @@
                 <div class="column">
                     <span class="footer-col-title">Services</span>
                     <ul>
-                        <li><a href="/services#cleaning-checklist" target="_blank">Checklist</a></li>
+                        <li><a href="/services#cleaning-checklist" target="_blank">Cleaning Checklist</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/faq" target="_blank">FAQ</a></li>
                     </ul>
                 </div>
                 <!-- END OF COL -->

@@ -1,0 +1,102 @@
+/* Font */
+
+@font-face {
+    font-family: 'Athelas Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Regular'), url('Athelas-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Athelas Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Italic'), url('Athelas-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Athelas Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold'), url('Athelas-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Athelas Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold Italic'), url('Athelas-BoldItalic.woff') format('woff');
+}
+
+
+/*Start Bookingpage services panel*/
+
+.content-panel{
+    background-color: transparent;
+    width: auto;
+}
+
+button.tablinks-panel, button.tablinks-panel:active, button.tablinks-panel:hover, button.tablinks-panel:focus{
+    background-color: transparent;
+    width: auto;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 0px;
+    color: #14374c;
+    text-align: bottom;
+    border: none;
+    font-size: 14px;
+
+}
+
+button.tablinks-pannel.active{
+    background-color: transparent;
+}
+
+button.tablinks-panel{
+    opacity: 0.25;
+
+}
+
+
+
+
+.tabs-panel button.active, tabs-panel button.focus, .tabs-panel button:hover{
+    color: black;
+    background-color: transparent;
+    opacity: 1.0;
+    border: none;
+    font-weight: 600;
+
+}
+
+
+#standardButton {
+    background-color: transparent;
+}
+
+.tabs-panel{
+    background-color: transparent;
+    margin: 0px 0px 0px 30px;
+    width: auto;
+}
+
+.services-ul-panel{
+    list-style-type: none;
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+}
+
+.services-ul-panel h1{
+    font-size: 20px;
+    margin: 0px 0px 5px 0px;
+}
+
+.services-ul-panel h1, li{
+    width: 300px;
+}
+
+/*End Bookingpage services panel*/

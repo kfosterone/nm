@@ -81,12 +81,12 @@ var servicePrice= service_prices[document.getElementById('service-bottom').value
 
 
 
-function calculateTotalBottom() {
+// function calculateTotalBottom() {
 
-    var totalPrice = getBedroomPriceBottom() + getBathroomPriceBottom() + getServicePriceBottom();
+//     var totalPrice = getBedroomPriceBottom() + getBathroomPriceBottom() + getServicePriceBottom();
 
-    document.getElementById('button-bottom').innerHTML = "Book now for $" + totalPrice;
-}
+//     document.getElementById('button-bottom').innerHTML = "Book now for $" + totalPrice;
+// }
 
 
 ////Mobile Top////////////////////
@@ -140,12 +140,12 @@ var servicePrice= service_prices[document.getElementById('service-bottom-mob').v
     return servicePrice;
 }
 
-function TotalBottomMob() {
+// function TotalBottomMob() {
 
-    var totalPrice = BedPriceBottomMob() + BathPriceBottomMob() + ServicePriceBottomMob();
+//     var totalPrice = BedPriceBottomMob() + BathPriceBottomMob() + ServicePriceBottomMob();
 
-    document.getElementById('button-bottom-mob').innerHTML = "Book now for $" + totalPrice;
-}
+//     document.getElementById('button-bottom-mob').innerHTML = "Book now for $" + totalPrice;
+// }
 
 
 /////////////////////////////////////
@@ -159,7 +159,7 @@ function defaultButtonText() {
     var defaultText = "85";
 
     document.getElementById('button-top').innerHTML = "Book now for $" + defaultText;
-    document.getElementById('button-bottom').innerHTML = "Book now for $" + defaultText;
+    // document.getElementById('button-bottom').innerHTML = "Book now for $" + defaultText;
     document.getElementById('button-top-mob').innerHTML = "Book now for $" + defaultText;
-    document.getElementById('button-bottom-mob').innerHTML = "Book now for $" + defaultText;
+    // document.getElementById('button-bottom-mob').innerHTML = "Book now for $" + defaultText;
 }

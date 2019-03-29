@@ -1,0 +1,184 @@
+<html>
+<body>
+<link rel="stylesheet" href="resources/css/bookingform.css">
+
+<script>
+    function serviceTabSelected(evt, serviceName) {
+        var i, servicecontent, tablinks;
+        servicecontent = document.getElementsByClassName("servicecontent");
+        for (i = 0; i < servicecontent.length; i++) {
+            servicecontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(serviceName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    function serviceTabSelectedpanel(evt, serviceName) {
+        var i, servicecontent, tablinks;
+        servicecontent = document.getElementsByClassName("servicecontent-panel");
+        for (i = 0; i < servicecontent.length; i++) {
+            servicecontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks-panel");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(serviceName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+
+   <div class='content-panel'>
+            	<div class="tabs-panel">
+
+		                <div class="tab-panel">
+		                    <button class="tablinks-panel" onclick="serviceTabSelectedpanel(event, 'lightContent-panel')"> Light </button>
+		                    <button id='standardButton-panel' class="tablinks-panel active" onclick="serviceTabSelectedpanel(event, 'standardContent-panel')"> Standard </button>
+		                    <button class="tablinks-panel" onclick="serviceTabSelectedpanel(event, 'deepContent-panel')"> Deep </button>
+		                    <button class="tablinks-panel" id='justfloors-panel' onclick="serviceTabSelectedpanel(event, 'floorsContent-panel')"> Just Floors </button>
+		                </div>
+
+
+		                <div id="lightContent-panel" class="servicecontent-panel" hidden="yes">
+		                    <ul class="services-ul-panel">
+		                        <h1>All Areas</h1>
+		                        <li>All surfaces dusted & wiped</li>
+		                        <li>Cabinet fronts wiped</li>
+		                        <li>Tables & counter tops cleaned</li>
+		                        <li>Carpet & rugs vacuumed </li>
+		                        <li>Hard floors swept & vacuumed</li>
+		                        <li>Cushions & pillows fluffed</li>
+		                        <li>Light organizing</li>
+		                        <li>Mirrors cleaned</li>
+		                        <li>Trash bins emptied</li>
+		                        <li><s>Trash bin exteriors cleaned</s></li>
+		                        <li><s>Baseboards wiped</s></li>
+		                        <li><s>Hard floors mopped</s></li>
+		                        <li><s>Ceiling fan blades wiped</s></li>
+		                        <li><s>Upholstered furniture vacuumed</s></li>
+		                        <li><s>Window sills cleaned</s></li>
+		                    </ul>
+		                    <ul class="services-ul-panel">
+		                        <h1>Bathrooms</h1>
+		                        <li>Sinks cleaned & sanitized</li>
+		                        <li>Toilet cleaned & sanitized</li>
+		                        <li>Mirrors cleaned</li>
+		                        <li>Towels changed</li>
+		                        <li><s>Bathtubs, shower walls & glass doors cleaned</s></li>
+		                        <li><s>Bathtub & shower grout deep scrubbed</s></li>
+		                    </ul>
+		                    <ul class="services-ul-panel">
+		                        <h1>Kitchen</h1>
+		                        <li>Sinks cleaned & sanitized</li>
+		                        <li>Appliance exteriors cleaned</li>
+		                        <li>Load & unload dishwasher</li>
+		                        <li><s>Microwave interior cleaned</s></li>
+		                        <li><s>Backsplash washed</s></li>
+		                    </ul>
+		                    <ul class="services-ul-panel">
+		                        <h1>Bedrooms</h1>
+		                        <li>Beds made</li>
+		                        <li><s>Sheets changed</s></li>
+		                    </ul>
+		                </div>
+		                <div id="standardContent-panel" class="servicecontent-panel">
+		                    <ul class="services-ul-panel">
+		                        <h1>All Areas</h1>
+		                        <li>All surfaces dusted & wiped</li>
+		                        <li>Cabinet fronts wiped</li>
+		                        <li>Tables & counter tops cleaned</li>
+		                        <li>Carpet & rugs vacuumed </li>
+		                        <li>Hard floors swept & vacuumed</li>
+		                        <li>Cushions & pillows fluffed</li>
+		                        <li>Light organizing</li>
+		                        <li>Mirrors cleaned</li>
+		                        <li>Trash bins emptied</li>
+		                        <li>Trash bin exteriors cleaned</li>
+		                        <li>Baseboards wiped</li>
+		                        <li>Hard floors mopped</li>
+		                        <li>Ceiling fan blades wiped</li>
+		                        <li><s>Upholstered furniture vacuumed</s></li>
+		                        <li><s>Window sills cleaned</s></li>
+		                    </ul>
+		                    <ul class="services-ul-panel">
+		                        <h1>Bathrooms</h1>
+		                        <li>Sinks cleaned & sanitized</li>
+		                        <li>Toilet cleaned & sanitized</li>
+		                        <li>Mirrors cleaned</li>
+		                        <li>Towels changed</li>
+		                        <li>Bathtubs, shower walls & glass doors cleaned</li>
+		                        <li><s>Bathtub & shower grout deep scrubbed</s></li>
+		                    </ul>
+		                    <ul class="services-ul-panel">
+		                        <h1>Kitchen</h1>
+		                        <li>Sinks cleaned & sanitized</li>
+		                        <li>Appliance exteriors cleaned</li>
+		                        <li>Load & unload dishwasher</li>
+		                        <li>Microwave interior cleaned</li>
+		                        <li><s>Backsplash washed</s></li>
+		                    </ul>
+		                    <ul class="services-ul-panel">
+		                        <h1>Bedrooms</h1>
+		                        <li>Beds made</li>
+		                        <li>Sheets changed</li>
+		                    </ul>
+		            </div>
+	                <div id="deepContent-panel" class="servicecontent-panel" hidden="yes">
+	                    <ul class="services-ul-panel">
+	                        <h1>All Areas</h1>
+	                        <li>All surfaces dusted & wiped</li>
+	                        <li>Cabinet fronts wiped</li>
+	                        <li>Tables & counter tops cleaned</li>
+	                        <li>Carpet & rugs vacuumed </li>
+	                        <li>Hard floors swept & vacuumed</li>
+	                        <li>Cushions & pillows fluffed</li>
+	                        <li>Light organizing</li>
+	                        <li>Mirrors cleaned</li>
+	                        <li>Trash bins emptied</li>
+	                        <li>Trash bin exteriors cleaned</li>
+	                        <li>Baseboards wiped</li>
+	                        <li>Hard floors mopped</li>
+	                        <li>Ceiling fan blades wiped</li>
+	                        <li>Upholstered furniture vacuumed</li>
+	                        <li>Window sills cleaned</li>
+	                    </ul>
+	                    <ul class="services-ul-panel">
+	                        <h1>Bathrooms</h1>
+	                        <li>Sinks cleaned & sanitized</li>
+	                        <li>Toilet cleaned & sanitized</li>
+	                        <li>Mirrors cleaned</li>
+	                        <li>Towels changed</li>
+	                        <li>Bathtubs, shower walls & glass doors cleaned</li>
+	                        <li>Bathtub & shower grout deep scrubbed</li>
+	                    </ul>
+	                    <ul class="services-ul-panel">
+	                        <h1>Kitchen</h1>
+	                        <li>Sinks cleaned & sanitized</li>
+	                        <li>Appliance exteriors cleaned</li>
+	                        <li>Load & unload dishwasher</li>
+	                        <li>Microwave interior cleaned</li>
+	                        <li>Backsplash washed</li>
+	                    </ul>
+	                    <ul class="services-ul-panel">
+	                        <h1>Bedrooms</h1>
+	                        <li>Beds made</li>
+	                        <li>Sheets changed</li>
+	                    </ul>
+	                </div>
+	                <div id="floorsContent-panel" class="servicecontent-panel" hidden="yes">
+	                    <ul class="services-ul-panel">
+	                        <h1>All Areas</h1>
+	                        <li>Carpet & rugs vacuumed </li>
+	                        <li>Hard floors swept & vacuumed</li>
+	                        <li>Light organizing</li>
+	                        <li>Hard floors mopped</li>
+	                    </ul>
+	                </div>
+            	</div>
+            </div>
+</body>
+</html>

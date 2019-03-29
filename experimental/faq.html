@@ -119,36 +119,39 @@
                 </p>
             </div>
             <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    }
-}
-</script>
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].onclick = function(){
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        }
+                    }
+            </script>
         </div>
     </div>
     <footer class="footer">
         <div class="footer-content">
             <div class="bottom clear">
                 <div class="column large">
-                    <p id='nm-logo-small'>Nature Maid</p>
-                    <div class="extra-meta">
-                        <a href="tel:17733575236" target="_blank" class="grey"><span>773-357-5236</span></a>
-                    </div>
-                </div>
-                <!-- END OF COL -->
+                    <ul>
+                        <li><p class='nm-logo-small'>Nature Maid</p></li>
+                        <li><div class ="extra-meta">
+                            <a href="tel:17733575236" target="_blank" class ="grey"><span target="_blank">773-357-5236</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- END OF COL -->
                 <div class="column">
                     <span class="footer-col-title">Company</span>
                     <ul>
+                        <!--li><a href="/about-us" >About Us</a></li-->
                         <li><a href="mailto:info@naturemaidclean.com" target="_blank">Contact Us</a></li>
                     </ul>
                 </div>
@@ -166,7 +169,10 @@ for (i = 0; i < acc.length; i++) {
                 <div class="column">
                     <span class="footer-col-title">Services</span>
                     <ul>
-                        <li><a href="/services#cleaning-checklist" target="_blank">Checklist</a></li>
+                        <li><a href="/services#cleaning-checklist" target="_blank">Cleaning Checklist</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/faq" target="_blank">FAQ</a></li>
                     </ul>
                 </div>
                 <!-- END OF COL -->
@@ -177,8 +183,8 @@ for (i = 0; i < acc.length; i++) {
                     </ul>
                 </div>
                 <!-- END OF COL -->
-                <!-- END OF BOTTOM -->
             </div>
+            <!-- END OF BOTTOM -->
             <div class="bottom-bar">
                 <p>Copyright © 2019 Nature Maid</p>
             </div>
