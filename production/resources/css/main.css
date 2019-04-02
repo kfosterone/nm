@@ -133,6 +133,21 @@
     justify-content: center
 }
 
+.social-icon{
+    width: 25px;
+    height: 25px;
+}
+
+#fb-icon{
+
+}
+
+#ig-icon{
+
+}
+
+
+
 
 .content-faq button{
 	background-color: transparent;
