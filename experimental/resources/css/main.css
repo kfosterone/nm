@@ -576,7 +576,8 @@ button.accordion {
 
 
 #services-hero {
-    opacity: 0.25;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 
