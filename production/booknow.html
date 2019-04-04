@@ -48,8 +48,14 @@
     <link rel="stylesheet" href="resources/css/main.css">
     <!-- endinject -->
     <!-- inject:js -->
-    <script src="resources/js/price-quote.js">
-    </script>
+
+    <script> $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
     <!-- endinject -->
 <!-- Facebook Pixel Code -->
 <script>
@@ -97,13 +103,42 @@
   fbq('track', 'InitiateCheckout');
 </script>
     <div id='universe'>
+    	<div id="booking-hero" class=" js-lazy hero-bk-holder" data-bgset="resources/images/booknow-hero.jpg" style="background-image:url(resources/images/booknow-hero.jpg);">
+    		<h1>You're seconds away from an amazing cleaning</h1>
+    		<div id="booking-graphics">
+                <div class="booking-container">
+    			<ul>
+    			<li><img src='resources/images/calendar.png'></li>
+    			<li>Flexible<br>Scheduling</li>
+    		      </ul>
+                </div>
+                <div class="booking-container">
+    		  <ul>
+    			<li><img src='resources/images/lock.png'></li>
+    			<li>Secure<br>Payments</li>
+    		  </ul>
+                </div>
+                <div class="booking-container">
+    			<ul>
+    				<li><img src='resources/images/nocontract.png'></li>
+    				<li>No<br>Contracts</li>
+    			</ul>
+                </div>
+    		</div>
+            <div id="scroll-container">
+            <section id="scroll" class="demo">
+            <a href="#bookingform"><span></span></a>
+            </section>
+            </div>
+
+    	</div>
         <!-- <div class="main-content"> -->
-        <section class="page-booking">
+        <section id="bookingform" class="page-booking">
             <div class="content-booking clear">
                 <div class="booking-header clear">
                     
                     <script src="https://naturemaidclean.launch27.com/jsbundle"></script>
-                    <iframe id="booking-widget-iframe" src="https://naturemaidclean.launch27.com/?w_cleaning" scrolling="yes" style="border:none;width:100%;min-height:2739px;overflow:hidden;padding-top:140px;padding-bottom: 20px" scrolling="yes"></iframe>
+                    <iframe id="booking-widget-iframe" src="https://naturemaidclean.launch27.com/?w_cleaning" scrolling="yes" scrolling="yes"></iframe>
                 </div>
             </div>
         </section>
