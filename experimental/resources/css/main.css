@@ -55,12 +55,16 @@
 
 }
 
+/*#booking-widget-iframe .booking.premium-booking .booking-form .summary-panel {
+display: none;
+}*/
+
 .app-view .ng-scope{
     padding-top: 50px;
 }
 
 #booking-hero{
-    padding: 25vh 0vw 25vh 0vw;
+    padding: 25vh 0vw 15vh 0vw;
     align-content: center;
     overflow: hidden;
     position: relative;
@@ -88,34 +92,162 @@
     padding: 0px;
 }
 
+
+
 #booking-graphics{
     position: relative;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     display: inline-block;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 
+}
+
+#booking-graphics .booking-container {
+    display: inline-block;
+    width: 26.66667%;
 }
 
 
 #booking-graphics img{
-    width: 100%;
-    height: auto;
+    vertical-align: top;
+    width: 120px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-#booking-graphics ul{
-    display: block;
-    float: left;
-    width: 10%;
-    margin: 0% 10% 0% 12%;
-    padding: 0px;
+#booking-graphics .booking-container ul{
+    width: 100%;
     color: white;
+    display: inline-block;
+    margin: 0px;
+}
+
+#booking-graphics .booking-container li{
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 560;
+    line-height: 40px;
 }
 
 #booking-graphics ul:last-child{
     margin-right: 0px
 }
+
+
+@media screen and (max-width: 1059px){
+    #booking-graphics .booking-container li{
+    font-size: 26px;
+    line-height: 34px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 939px){
+
+    #booking-graphics{
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+#booking-graphics .booking-container {
+    width: 30%;
+}
+
+    #booking-graphics .booking-container li{
+    font-size: 22px;
+    line-height: 28px;
+}
+
+#booking-graphics img{
+}
+
+
+
+}
+
+@media screen and (max-width: 689px){
+
+    #booking-graphics{
+
+}
+
+#booking-graphics .booking-container {
+}
+
+    #booking-graphics .booking-container li{
+    font-size: 20px;
+    height: 120px;
+    line-height: 26px;
+}
+
+#booking-graphics img{
+    width: 90px;
+    margin-bottom: 5px;
+}
+
+
+
+}
+
+@media screen and (max-width: 625px){
+
+    #booking-graphics{
+}
+
+#booking-graphics .booking-container {
+}
+
+    #booking-graphics .booking-container li{
+        font-size: 16px;
+        line-height: 20px;
+}
+
+#booking-graphics img{
+
+
+}
+
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    #booking-graphics{
+        padding-left: 2%;
+        padding-right: 2%;
+}
+
+#booking-graphics .booking-container {
+    width: 32%;
+}
+
+    #booking-graphics .booking-container li{
+        font-size: 14px;
+        width: 100%
+        line-height: 18px;
+        height: 90px;
+}
+
+
+#booking-graphics img{
+    width: 70px;
+}
+
+}
+
+
 
 /*End booknow page*/
 
