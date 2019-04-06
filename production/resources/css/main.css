@@ -105,11 +105,11 @@
 
 #booking-widget-iframe{
     border:none;
-    width:100%;
+    width: 100%;
     min-height:2739px;
     overflow:hidden;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
 
 }
 
@@ -122,12 +122,13 @@ display: none;
 }
 
 #booking-hero{
-    padding: 25vh 0vw 4vh 0vw;
+    padding: 25vh 0px 4vh 0px;
     height: auto;
+    width: 100%;
     align-content: center;
     overflow: hidden;
     position: relative;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 #booking-hero h1{
@@ -140,9 +141,10 @@ display: none;
 
 }
 
-.booking-header{
+.booking-header .clear, .content-booking .clear{
     margin: 0px;
     padding: 0px;
+    width: 100%;
 }
 
 .page-booking{
