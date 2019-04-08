@@ -46,80 +46,49 @@
 /*Start Booknow page*/
 
 
-/*---animated scroll btn*/
+/*Start bouncing arrow*/
 
-#scroll-container{
-    height: 36px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-#sroll a {
-  padding-top: 70px;
-}
-#scroll span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-  -webkit-animation: sdb06 1.5s infinite;
-  animation: sdb06 1.5s infinite;
-  box-sizing: border-box;
+.bounce-arrow {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  height: auto;
 }
 
-@-webkit-keyframes sdb06 {
-  0% {
-    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite
 }
-@keyframes sdb06 {
-  0% {
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  50% {
-    opacity: 1;
+  40% {
+    transform: translateY(-30px);
   }
-  100% {
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
+  60% {
+    transform: translateY(-15px);
   }
 }
 
+a.fa { 
+    color: white; 
+    text-decoration: none;
+    padding: 20px; }
 
-/*---end scroll btn-----*/
-
-#booking-widget-iframe{
-    border:none;
-    width: 100%;
-    min-height:2739px;
-    overflow:hidden;
-    padding: 20px 0px 20px 0px;
-    margin: 0px;
-
+a.fa:hover {
+    color: white;
 }
 
-/*#booking-widget-iframe .booking.premium-booking .booking-form .summary-panel {
-display: none;
-}*/
+/*End bouncing arrow*/
 
-.app-view .ng-scope{
-    padding-top: 50px;
-}
+
+
+
+
 
 #booking-hero{
     padding: 25vh 0px 4vh 0px;
@@ -136,21 +105,30 @@ display: none;
     overflow: hidden;
     color: white;
     text-align: center;
-    margin:0vh 5% 10vh 5%;
+    margin:0vh 0% 10vh 0%;
+    padding: 0px 5% 0 5%;
 
 
 }
 
-.booking-header .clear, .content-booking .clear{
-    margin: 0px;
-    padding: 0px;
+
+#booking-widget-iframe{
+    border:none;
     width: 100%;
+    min-height:2739px;
+    overflow:hidden;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+
 }
 
-.page-booking{
+#bookingform {
+    width: 100%
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
+
 
 
 
@@ -163,6 +141,7 @@ display: none;
     padding-right: 10%;
 
 }
+
 
 #booking-graphics .booking-container {
     display: inline-block;
@@ -198,6 +177,7 @@ display: none;
 
 #booking-graphics ul:last-child{
     height: auto;
+    padding-right: 0px;
 }
 
 
@@ -1373,7 +1353,8 @@ select {
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
