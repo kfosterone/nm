@@ -46,16 +46,12 @@
     <link rel="canonical" href="/">
     <!-- inject:css -->
     <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/font-awesome/css/font-awesome.min.css">
+
     <!-- endinject -->
     <!-- inject:js -->
 
-    <script> $(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
-</script>
+
     <!-- endinject -->
 <!-- Facebook Pixel Code -->
 <script>
@@ -125,23 +121,25 @@
     			</ul>
                 </div>
     		</div>
-            <div id="scroll-container">
-            <section id="scroll" class="demo">
-            <a href="#bookingform"><span></span></a>
-            </section>
+            <div class="bounce-arrow bounce">
+            <a class="fa fa-arrow-down fa-2x" href="#bookingform"></a>
+            <script>
+            !function(){function e(e){t(e),window.PrefixFree&&StyleFix.process()}function t(e){var t=n(),a=document.createElement("style");a.type="text/css",a.className="cp-pen-styles",a.styleSheet?a.styleSheet.cssText=e:a.appendChild(document.createTextNode(e)),c.appendChild(a),t&&t.parentNode.removeChild(t)}function n(){for(var e=document.getElementsByTagName("style"),t=e.length-1;t>=0;t--)if("cp-pen-styles"===e[t].className)return e[t];return!1}function a(e){window.addEventListener?window.addEventListener("message",e,!1):window.attachEvent("onmessage",e)}function s(e,t){try{if(!/codepen/.test(e.origin))return null;if("object"!=typeof e.data)return null;if(e.data.action===t)return e.data}catch(n){}return null}var c=document.head||document.getElementsByTagName("head")[0],r="ACTION_LIVE_VIEW_RELOAD_CSS";a(function(t){var n=s(t,r);n&&e(n.data.css)})}();
+            </script>
+
             </div>
+            
 
     	</div>
         <!-- <div class="main-content"> -->
-        <section id="bookingform" class="page-booking">
+        <div id="bookingform" class="page-booking">
             <div class="content-booking clear">
                 <div class="booking-header clear">
-                    
                     <script src="https://naturemaidclean.launch27.com/jsbundle"></script>
-                    <iframe id="booking-widget-iframe" src="https://naturemaidclean.launch27.com/?w_cleaning" scrolling="yes" scrolling="yes"></iframe>
+                    <iframe id="booking-widget-iframe" src="https://naturemaidclean.launch27.com/?w_cleaning" scrolling="no"></iframe>
                 </div>
             </div>
-        </section>
+        </div>
 </div>
 </div>
     <div id="footer">

@@ -115,10 +115,10 @@ a.fa:hover {
 #booking-widget-iframe{
     border:none;
     width: 100%;
-    min-height:2739px;
-    overflow:hidden;
     padding: 20px 0px 20px 0px;
+    min-height:2739px;
     margin: 0px;
+
 
 }
 
@@ -289,7 +289,7 @@ a.fa:hover {
 
 
 
-/*End booknow page*/
+/*End booknow page
 
 /*Start ThankYou page*/
 
@@ -760,7 +760,7 @@ button.accordion {
 
 
 .servicepage-hero h1 {
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #003a3a;
     letter-spacing: 2px;
     font-size: 40px;
@@ -911,7 +911,7 @@ button.accordion {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 3px;
-    font-family: BrownStd, Helvetica, sans-serif, bold;
+    font-family: Helvetica, sans-serif, bold;
 
 
 }
@@ -1178,7 +1178,7 @@ select {
     padding: 0px;
     background: #fff;
     background-color: transparent;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 13px;
     line-height: 1;
     border: 0;
@@ -1195,7 +1195,7 @@ select {
     padding: 0px;
     background: #fff;
     background-color: transparent;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 13px;
     line-height: 1;
     border: 0;
@@ -1212,7 +1212,7 @@ select {
     padding: 0px;
     background: #fff;
     background-color: transparent;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 13px;
     line-height: 160px;
     border: 0;
@@ -1228,7 +1228,7 @@ select {
     padding: 0px;
     background: #fff;
     background-color: transparent;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 13px;
     line-height: 160px;
     border: 0;
@@ -2392,23 +2392,6 @@ ul li {
 
 
 
-@font-face {
-    font-family: BrownStd;
-    src: url(../fonts/BrownStd-Regular.eot);
-    src: url(../fonts/BrownStd-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/BrownStd-Regular.woff2) format('woff2'), url(../fonts/BrownStd-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: BrownStd;
-    src: url(../fonts/BrownStd-Bold.eot);
-    src: url(../fonts/BrownStd-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/BrownStd-Bold.woff2) format('woff2'), url(../fonts/BrownStd-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal
-}
-
-
 
 #login-button {
     -webkit-transition: all 250ms 0s ease-in-out;
@@ -2479,7 +2462,7 @@ ul li {
 
 
 body {
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     -webmit-text-rendering: optimizeLegibility;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
@@ -2519,7 +2502,7 @@ body #universe {
 address,
 p {
     line-height: 1.65;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 400;
     color: #16374b
 }
@@ -2573,7 +2556,7 @@ address {
 .h2,
 h1,
 h2 {
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 700
 }
 
@@ -2734,7 +2717,7 @@ h5 {
     line-height: 1.2;
     font-weight: 700;
     color: #16374b;
-    font-family: BrownStd, Helvetica, sans-serif
+    font-family: Helvetica, sans-serif
 }
 
 @media screen and (max-width:1099px) and (min-width:940px) {
@@ -3219,7 +3202,7 @@ form input,
 form textarea {
     font-size: 16px;
     line-height: 1.2;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 400;
     color: #16374b;
     position: relative;
@@ -3441,7 +3424,7 @@ header.header .logo-wrapper .extra-meta {
     margin-left: 20px;
     line-height: auto;
     margin-top: 43px;
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-style: italic;
     font-size: 14px;
     color: #9fa4a6;
@@ -3790,7 +3773,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 }
 
 .footer .footer-content .bottom .column .footer-col-title {
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #009999;
@@ -3807,7 +3790,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
 
 
 .footer .footer-content .bottom .column ul li a {
-    font-family: BrownStd, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 14px;
     color: #9fa4a6;
     -webkit-transition: color 250ms 0s ease;
@@ -4218,7 +4201,7 @@ header.header .mobile-bottom-nav li a.btn-static:hover {
     .about-intro-section .left-side .meta-info ul li,
     .about-intro-section .right-side .meta-info ul li {
         line-height: 1.65;
-        font-family: BrownStd, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
         font-weight: 400;
         font-size: 15px;
         display: inline-block;
